@@ -1,0 +1,94 @@
+12:587  4:394  Found BIOS RSDP at FE020
+12:587  0:000  Saving ACPI tables from RSDP FE020 to EFI\CLOVER\ACPI\origin ...
+12:587  0:000   FE020: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+12:698  0:110    (Xsdt: AF7FE120, Rsdt: AF7FE0AC)
+12:698  0:000    AF7FE120: 'XSDT', 'TOSINV00', Rev: 1, Len: 148 -> XSDT.aml
+12:786  0:087    AF7FE0AC: 'RSDT', 'TOSINV00', Rev: 1, Len: 92 -> RSDT.aml
+12:873  0:087    Tables in Xsdt: 14
+12:873  0:000    0. AF7FC000: 'FACP', 'TOSINV00', Rev: 4, Len: 244 -> FACP.aml
+12:961  0:087        (Dsdt: AF7F1000, Facs: AF76D000, XDsdt: AF7F1000, XFacs: AF76D000)
+12:961  0:000        AF7F1000: 'DSDT', 'TOSINV00', Rev: 1, Len: 28852 -> DSDT.aml
+13:050  0:088        AF76D000: 'FACS', Ver: 1, Len: 64 -> FACS.aml
+13:138  0:087    1. AF7FD000: 'ASF!', 'TOSINV00', Rev: 32, Len: 165 -> ASF!.aml
+13:226  0:087    2. AF7FB000: 'HPET', 'TOSINV00', Rev: 1, Len: 56 -> HPET.aml
+13:314  0:087    3. AF7FA000: 'APIC', 'TOSINV00', Rev: 2, Len: 140 -> APIC.aml
+13:402  0:087    4. AF7F9000: 'MCFG', 'TOSINV00', Rev: 1, Len: 60 -> MCFG.aml
+13:481  0:078    5. AF7F0000: 'SLIC', 'TOSINV00', Rev: 1, Len: 374 -> SLIC.aml
+13:560  0:078    6. AF7EF000: 'WDAT', 'TOSINV00', Rev: 1, Len: 548 -> WDAT.aml
+13:639  0:078    7. AF7ED000: 'SSDT', 'PtidDevc', Rev: 1, Len: 4200 -> SSDT-0-PtidDevc.aml
+13:718  0:079    8. AF7EB000: 'BOOT', 'TOSINV00', Rev: 1, Len: 40 -> BOOT.aml
+13:797  0:078    9. AF7E8000: 'ASPT', 'TOSINV00', Rev: 7, Len: 52 -> ASPT.aml
+13:899  0:101    10. AF7E5000: 'SSDT', 'TsbOdm', Rev: 1, Len: 11519 -> SSDT-1-TsbOdm.aml
+13:983  0:083    11. AF7E4000: 'MSDM', 'TOSINV00', Rev: 3, Len: 85 -> MSDM.aml
+14:066  0:083    12. AF7E3000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2262 -> SSDT-2-Cpu0Ist.aml
+14:150  0:083    13. AF7E2000: 'SSDT', 'CpuPm', Rev: 1, Len: 2454 -> SSDT-3-CpuPm.aml (Found hidden SSDT 4 pcs)
+14:238  0:088        * ACF54018: 'SSDT', 'PtidDevc', Rev: 1, Len: 4200  53 53 44 54 68 10 00 00 01 EF 54 72 6D 52 65 66 Internal length = 4200 -> SSDT-x3_0-PtidDevc.aml
+14:321  0:083        * AF671A98: 'SSDT', 'ApIst', Rev: 1, Len: 771  53 53 44 54 03 03 00 00 01 71 50 6D 52 65 66 00 Internal length = 771 -> SSDT-x3_1-ApIst.aml
+14:432  0:111        * AF670698: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 1615  53 53 44 54 4F 06 00 00 01 DC 50 6D 52 65 66 00 Internal length = 1615 -> SSDT-x3_2-Cpu0Cst.aml
+14:511  0:079        * AF66FD98: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 E7 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x3_3-ApCst.aml
+14:591  0:079  
+14:591  0:000    Tables in Rsdt: 14
+14:591  0:000    0. AF7FC000: 'FACP', 'TOSINV00', Rev: 4, Len: 244 -> RSDT-FACP.aml
+14:642  0:051        (Dsdt: AF7F1000, Facs: AF76D000, XDsdt: AF7F1000, XFacs: AF76D000)
+14:642  0:000        AF7F1000: 'DSDT', 'TOSINV00', Rev: 1, Len: 28852 -> RSDT-DSDT.aml
+14:694  0:052        AF76D000: 'FACS', Ver: 1, Len: 64 -> RSDT-FACS.aml
+14:745  0:051    1. AF7FD000: 'ASF!', 'TOSINV00', Rev: 32, Len: 165 -> RSDT-ASF!.aml
+14:796  0:051    2. AF7FB000: 'HPET', 'TOSINV00', Rev: 1, Len: 56 -> RSDT-HPET.aml
+14:870  0:074    3. AF7FA000: 'APIC', 'TOSINV00', Rev: 2, Len: 140 -> RSDT-APIC.aml
+14:916  0:046    4. AF7F9000: 'MCFG', 'TOSINV00', Rev: 1, Len: 60 -> RSDT-MCFG.aml
+14:963  0:046    5. AF7F0000: 'SLIC', 'TOSINV00', Rev: 1, Len: 374 -> RSDT-SLIC.aml
+15:009  0:046    6. AF7EF000: 'WDAT', 'TOSINV00', Rev: 1, Len: 548 -> RSDT-WDAT.aml
+15:065  0:055    7. AF7ED000: 'SSDT', 'PtidDevc', Rev: 1, Len: 4200 -> RSDT-SSDT-4-PtidDevc.aml
+15:116  0:051    8. AF7EB000: 'BOOT', 'TOSINV00', Rev: 1, Len: 40 -> RSDT-BOOT.aml
+15:167  0:051    9. AF7E8000: 'ASPT', 'TOSINV00', Rev: 7, Len: 52 -> RSDT-ASPT.aml
+15:218  0:051    10. AF7E5000: 'SSDT', 'TsbOdm', Rev: 1, Len: 11519 -> RSDT-SSDT-5-TsbOdm.aml
+15:293  0:074    11. AF7E4000: 'MSDM', 'TOSINV00', Rev: 3, Len: 85 -> RSDT-MSDM.aml
+15:344  0:051    12. AF7E3000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2262 -> RSDT-SSDT-6-Cpu0Ist.aml
+15:395  0:051    13. AF7E2000: 'SSDT', 'CpuPm', Rev: 1, Len: 2454 -> RSDT-SSDT-7-CpuPm.aml (Found hidden SSDT 4 pcs)
+15:455  0:060        * ACF54018: 'SSDT', 'PtidDevc', Rev: 1, Len: 4200  53 53 44 54 68 10 00 00 01 EF 54 72 6D 52 65 66 Internal length = 4200 -> RSDT-SSDT-x7_0-PtidDevc.aml
+15:506  0:051        * AF671A98: 'SSDT', 'ApIst', Rev: 1, Len: 771  53 53 44 54 03 03 00 00 01 71 50 6D 52 65 66 00 Internal length = 771 -> RSDT-SSDT-x7_1-ApIst.aml
+15:580  0:074        * AF670698: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 1615  53 53 44 54 4F 06 00 00 01 DC 50 6D 52 65 66 00 Internal length = 1615 -> RSDT-SSDT-x7_2-Cpu0Cst.aml
+15:627  0:046        * AF66FD98: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 E7 50 6D 52 65 66 00 Internal length = 281 -> RSDT-SSDT-x7_3-ApCst.aml
+15:674  0:046  
+15:674  0:000  Found UEFI Acpi 2.0 RSDP at AF270000
+15:674  0:000  Printing ACPI tables from RSDP AF270000 ...
+15:674  0:000   AF270000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+15:674  0:000    (Xsdt: AF7FE120, Rsdt: AF7FE0AC)
+15:674  0:000    AF7FE120: 'XSDT', 'TOSINV00', Rev: 1, Len: 148
+15:674  0:000    AF7FE0AC: 'RSDT', 'TOSINV00', Rev: 1, Len: 92
+15:674  0:000    Tables in Xsdt: 14
+15:674  0:000    0. AF7FC000: 'FACP', 'TOSINV00', Rev: 4, Len: 244
+15:674  0:000        (Dsdt: AF7F1000, Facs: AF76D000, XDsdt: AF7F1000, XFacs: AF76D000)
+15:674  0:000        AF7F1000: 'DSDT', 'TOSINV00', Rev: 1, Len: 28852
+15:674  0:000        AF76D000: 'FACS', Ver: 1, Len: 64
+15:674  0:000    1. AF7FD000: 'ASF!', 'TOSINV00', Rev: 32, Len: 165
+15:674  0:000    2. AF7FB000: 'HPET', 'TOSINV00', Rev: 1, Len: 56
+15:674  0:000    3. AF7FA000: 'APIC', 'TOSINV00', Rev: 2, Len: 140
+15:674  0:000    4. AF7F9000: 'MCFG', 'TOSINV00', Rev: 1, Len: 60
+15:674  0:000    5. AF7F0000: 'SLIC', 'TOSINV00', Rev: 1, Len: 374
+15:674  0:000    6. AF7EF000: 'WDAT', 'TOSINV00', Rev: 1, Len: 548
+15:674  0:000    7. AF7ED000: 'SSDT', 'PtidDevc', Rev: 1, Len: 4200
+15:675  0:000    8. AF7EB000: 'BOOT', 'TOSINV00', Rev: 1, Len: 40
+15:675  0:000    9. AF7E8000: 'ASPT', 'TOSINV00', Rev: 7, Len: 52
+15:675  0:000    10. AF7E5000: 'SSDT', 'TsbOdm', Rev: 1, Len: 11519
+15:675  0:000    11. AF7E4000: 'MSDM', 'TOSINV00', Rev: 3, Len: 85
+15:675  0:000    12. AF7E3000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2262
+15:675  0:000    13. AF7E2000: 'SSDT', 'CpuPm', Rev: 1, Len: 2454
+15:675  0:000    Tables in Rsdt: 14
+15:675  0:000    0. AF7FC000: 'FACP', 'TOSINV00', Rev: 4, Len: 244
+15:675  0:000        (Dsdt: AF7F1000, Facs: AF76D000, XDsdt: AF7F1000, XFacs: AF76D000)
+15:675  0:000        AF7F1000: 'DSDT', 'TOSINV00', Rev: 1, Len: 28852
+15:675  0:000        AF76D000: 'FACS', Ver: 1, Len: 64
+15:675  0:000    1. AF7FD000: 'ASF!', 'TOSINV00', Rev: 32, Len: 165
+15:675  0:000    2. AF7FB000: 'HPET', 'TOSINV00', Rev: 1, Len: 56
+15:675  0:000    3. AF7FA000: 'APIC', 'TOSINV00', Rev: 2, Len: 140
+15:675  0:000    4. AF7F9000: 'MCFG', 'TOSINV00', Rev: 1, Len: 60
+15:675  0:000    5. AF7F0000: 'SLIC', 'TOSINV00', Rev: 1, Len: 374
+15:675  0:000    6. AF7EF000: 'WDAT', 'TOSINV00', Rev: 1, Len: 548
+15:675  0:000    7. AF7ED000: 'SSDT', 'PtidDevc', Rev: 1, Len: 4200
+15:675  0:000    8. AF7EB000: 'BOOT', 'TOSINV00', Rev: 1, Len: 40
+15:675  0:000    9. AF7E8000: 'ASPT', 'TOSINV00', Rev: 7, Len: 52
+15:675  0:000    10. AF7E5000: 'SSDT', 'TsbOdm', Rev: 1, Len: 11519
+15:675  0:000    11. AF7E4000: 'MSDM', 'TOSINV00', Rev: 3, Len: 85
+15:675  0:000    12. AF7E3000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2262
+15:675  0:000    13. AF7E2000: 'SSDT', 'CpuPm', Rev: 1, Len: 2454
