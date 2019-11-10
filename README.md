@@ -15,7 +15,7 @@ HackinToshiba
 ## Replacements
 1. HDD to SSD.
 2. AR9285 to BCM94360HMB with little masking. AR9285 works by injecting a compatible id via config.plist/Devices/Properties/Pci(AR9285), but does not allow AirDrop or other continuity features, plus the incompatible bluetooth (outdated firmware uploader).
-3. +1 DDR3 4G RAM to original 4G. The printed frequency on the stock RAM is 1066 but actually it is 1333 lol.
+3. +1 DDR3 4G RAM to original 4G. The printed frequency on the stock RAM is 1066, and on the front it says 10600, and in Windows it is 1333 lol.
 ## Acknoledgment
 Apple for macOS
 

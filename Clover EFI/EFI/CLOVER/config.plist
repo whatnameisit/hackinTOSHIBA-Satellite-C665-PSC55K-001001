@@ -29,13 +29,19 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					TEdQQwk=
-					</data>
+					<data>TEdQQwk=</data>
 					<key>Replace</key>
-					<data>
-					WEdQQwk=
-					</data>
+					<data>WEdQQwk=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Syntax Fix: _HID ABCDEFGH to ABCDABCD</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>QUJDREVGR0g=</data>
+					<key>Replace</key>
+					<data>QUJDREFCQ0Q=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -43,17 +49,11 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1BSVw==
-					</data>
+					<data>X1BSVw==</data>
 					<key>Replace</key>
-					<data>
-					WFBSVw==
-					</data>
+					<data>WFBSVw==</data>
 					<key>TgtBridge</key>
-					<data>
-					TElEMA==
-					</data>
+					<data>TElEMA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -61,17 +61,11 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1BSVw==
-					</data>
+					<data>X1BSVw==</data>
 					<key>Replace</key>
-					<data>
-					WFBSVw==
-					</data>
+					<data>WFBSVw==</data>
 					<key>TgtBridge</key>
-					<data>
-					RUhDMQ==
-					</data>
+					<data>RUhDMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -79,27 +73,19 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					UE5PVAg=
-					</data>
+					<data>UE5PVAg=</data>
 					<key>Replace</key>
-					<data>
-					UFlFUwg=
-					</data>
+					<data>UFlFUwg=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>OS fix: assign OSYS to Windows 7 value, pair up with SSDT-_OSI-XINI.aml</string>
+					<string>OS fix: Rename M(_INI_ in PCI0 to ZINI, pair up with SSDT-_INI-OSYS.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					cAvQB09TWVM=
-					</data>
+					<data>X0lOSQA=</data>
 					<key>Replace</key>
-					<data>
-					WElOSaOjo6M=
-					</data>
+					<data>WklOSQA=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -107,13 +93,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					RUhDMQ==
-					</data>
+					<data>RUhDMQ==</data>
 					<key>Replace</key>
-					<data>
-					RUgwMQ==
-					</data>
+					<data>RUgwMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -121,13 +103,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					RUhDMg==
-					</data>
+					<data>RUhDMg==</data>
 					<key>Replace</key>
-					<data>
-					RUgwMg==
-					</data>
+					<data>RUgwMg==</data>
 				</dict>
 			</array>
 		</dict>
@@ -333,15 +311,11 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				igKEwHRE
-				</data>
+				<data>igKEwHRE</data>
 				<key>MatchOS</key>
 				<string>10.13.x</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtE
-				</data>
+				<data>igKEwOtE</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -349,15 +323,11 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
+				<data>igKEwHRC</data>
 				<key>MatchOS</key>
 				<string>10.14.x</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
+				<data>igKEwOtC</data>
 			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
@@ -372,52 +342,10 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>06/13/19</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP81.88Z.F000.B00.1906132217</string>
-		<key>Board-ID</key>
-		<string>Mac-94245B3640C91C81</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>W89242310GUDM6D1H</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x0A</string>
-		<key>EfiVersion</key>
-		<string>87.0.0.0.0</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xC00DE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
-		<key>PlatformFeature</key>
-		<string>0xFFFF</string>
 		<key>ProductName</key>
 		<string>MacBookPro8,1</string>
-		<key>SerialNumber</key>
-		<string>W89JK0ZLDH2G</string>
-		<key>SmUUID</key>
-		<string>9ED11A56-E2B3-42F0-965D-EC5584BC9855</string>
-		<key>Version</key>
-		<string>1.0</string>
+		<key>Trust</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
