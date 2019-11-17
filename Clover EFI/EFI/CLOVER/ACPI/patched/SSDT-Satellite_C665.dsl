@@ -10,7 +10,6 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     #include "SSDT-DMAC.dsl"
     #include "SSDT-EC.dsl"
     #include "SSDT-LGPC.dsl"
-    #include "SSDT-NV315M.dsl"
     #include "SSDT-PNLF.dsl"
     #include "SSDT-PRGen.dsl"
     #include "SSDT-PRW.dsl"

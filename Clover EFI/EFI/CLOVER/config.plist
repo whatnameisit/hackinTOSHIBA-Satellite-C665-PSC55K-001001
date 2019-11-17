@@ -176,7 +176,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 slide=0 applbkl=0</string>
+		<string>kext-dev-mode=1 applbkl=0</string>
 		<key>DefaultVolume</key>
 		<string>High Sierra</string>
 		<key>NeverHibernate</key>
@@ -184,7 +184,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>0</integer>
+		<integer>1</integer>
 	</dict>
 	<key>Comment</key>
 	<string>Toshiba Satellite C665, B940, 315M, @whatnameisit</string>
@@ -194,8 +194,293 @@
 		<false/>
 		<key>NoDefaultProperties</key>
 		<true/>
+		<key>AddProperties</key>
+		<array>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Key</key>
+				<string>AAPL,backlight-control</string>
+				<key>Value</key>
+				<data>AQAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL,aux-power-connected</string>
+				<key>Value</key>
+				<data>AQAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL00,inverter</string>
+				<key>Value</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL,gray-page</string>
+				<key>Value</key>
+				<data>AQAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL00,blackscreen.preferences</string>
+				<key>Value</key>
+				<data>AAAACA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,NVMT</string>
+				<key>Value</key>
+				<data>DgN/IAAAAABACwgH4AtwC5ALAAA8BwsHEQcAAPCnIRQAAAABrwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAABAAAAAAAA/wAAAAC8AgFaCgQAAAACAABACwgHQAsIBw==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>NVPM</string>
+				<key>Value</key>
+				<data>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>NVCAP</string>
+				<key>Value</key>
+				<data>BAAAAAAAAwAIAAAAAAAABwAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,pwm-info</string>
+				<key>Value</key>
+				<data>AhgAZJBZAgAIUgAApRwAAAAEAAABAAAA</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,built-in</string>
+				<key>Value</key>
+				<data>AQ==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,connector-type</string>
+				<key>Value</key>
+				<data>AgAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,backlight-control</string>
+				<key>Value</key>
+				<data>AQAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,use-backlight-blanking</string>
+				<key>Value</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,AAPL,boot-display</string>
+				<key>Value</key>
+				<data>AQ==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,display-cfg</string>
+				<key>Value</key>
+				<data>AwEAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL,slot-name</string>
+				<key>Value</key>
+				<string>Built-in</string>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>device_type</string>
+				<key>Value</key>
+				<string>NVDA,Parent</string>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>model</string>
+				<key>Value</key>
+				<string>NVIDIA GeForce 315M</string>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>hda-gfx</string>
+				<key>Value</key>
+				<string>onboard-1</string>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,compatible</string>
+				<key>Value</key>
+				<string>NVDA,NVMac</string>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,display-type</string>
+				<key>Value</key>
+				<string>LCD</string>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,device_type</string>
+				<key>Value</key>
+				<string>display</string>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>@0,name</string>
+				<key>Value</key>
+				<string>NVDA,Display-A</string>
+			</dict>
+		</array>
 		<key>Properties</key>
-		<dict/>
+		<dict>
+			<key>#PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,backlight-control</key>
+				<data>AQAAAA==</data>
+				<key>AAPL,aux-power-connected</key>
+				<data>AQAAAA==</data>
+				<key>AAPL00,inverter</key>
+				<data>AAAAAA==</data>
+				<key>AAPL,gray-page</key>
+				<data>AQAAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Built-in</string>
+				<key>AAPL00,blackscreen.preferences</key>
+				<data>AAAACA==</data>
+				<key>device_type</key>
+				<string>NVDA,Parent</string>
+				<key>model</key>
+				<string>NVIDIA GeForce 315M</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>NVPM</key>
+				<data>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</data>
+				<key>NVCAP</key>
+				<data>BAAAAAAAAwAIAAAAAAAABwAAAAA=</data>
+				<key>@0,NVMT</key>
+				<data>DgN/IAAAAABACwgH4AtwC5ALAAA8BwsHEQcAAPCnIRQAAAABrwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAABAAAAAAAA/wAAAAC8AgFaCgQAAAACAABACwgHQAsIBw==</data>
+				<key>@0,pwm-info</key>
+				<data>AhgAZJBZAgAIUgAApRwAAAAEAAABAAAA</data>
+				<key>@0,built-in</key>
+				<data>AQ==</data>
+				<key>@0,connector-type</key>
+				<data>AAgAAA==</data>
+				<key>@0,backlight-control</key>
+				<data>AQAAAA==</data>
+				<key>@0,use-backlight-blanking</key>
+				<data></data>
+				<key>@0,AAPL,boot-display</key>
+				<data>AQ==</data>
+				<key>@0,display-cfg</key>
+				<data>AwEAAA==</data>
+				<key>@0,compatible</key>
+				<string>NVDA,NVMac</string>
+				<key>@0,display-type</key>
+				<string>LCD</string>
+				<key>@0,device_type</key>
+				<string>display</string>
+				<key>@0,name</key>
+				<string>NVDA,Display-A</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
+			<dict/>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -217,44 +502,7 @@
 		<key>Custom</key>
 		<dict>
 			<key>Entries</key>
-			<array>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>Hidden</key>
-					<true/>
-					<key>Ignore</key>
-					<false/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Type</key>
-					<string>OSXRecovery</string>
-				</dict>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>FullTitle</key>
-					<string>Boot macOS High Sierra</string>
-					<key>Ignore</key>
-					<false/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Type</key>
-					<string>OSX</string>
-					<key>Volume</key>
-					<string>65D9AEA0-DD9D-4E5D-BA7A-E95A405F48F9</string>
-				</dict>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>Ignore</key>
-					<false/>
-					<key>Title</key>
-					<string>Windows</string>
-					<key>Type</key>
-					<string>Windows</string>
-				</dict>
-			</array>
+			<array/>
 		</dict>
 		<key>Mouse</key>
 		<dict>
@@ -344,8 +592,6 @@
 	<dict>
 		<key>ProductName</key>
 		<string>MacBookPro8,1</string>
-		<key>Trust</key>
-		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
