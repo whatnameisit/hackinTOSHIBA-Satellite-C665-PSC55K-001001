@@ -200,11 +200,21 @@
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Key</key>
 				<string>AAPL,backlight-control</string>
 				<key>Value</key>
 				<data>AQAAAA==</data>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>NVidia</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>VRAM,totalsize</string>
+				<key>Value</key>
+				<data>AAAAIA==</data>
 			</dict>
 			<dict>
 				<key>Device</key>

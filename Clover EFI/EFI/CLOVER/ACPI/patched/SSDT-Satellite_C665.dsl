@@ -15,5 +15,6 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     #include "SSDT-PRW.dsl"
     #include "SSDT-SBUS.dsl"
     #include "SSDT-SLPB.dsl"
+    #include "SSDT-ALS0.dsl"
 
 }
