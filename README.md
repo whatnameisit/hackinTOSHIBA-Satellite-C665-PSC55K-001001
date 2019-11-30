@@ -12,11 +12,13 @@ HackinToshiba
 9. Lid-sleep and -wake does not seem to work. I think I need to configure the ACPI LID0 device. NUMLOCK does not save its last setting. AppleSmartTouchpad.kext boots with it turned off, and VoodooPS2Controller.kext does not have the NUMLOCK feature.
 10. Continuity features do not seem to be working. I have injected BT4LEContinuityFixup.kext via Clover which still does not enable Handoff.
 11. Cosmetic injection properties such as PCI information ~~and RAM serial numbers~~ may be applied later.
-12. _DSM at PEGP injects the properties to both the graphics and sound card. Also an issue with Clover: PEGP@0 is a graphics device, and PEGP@1 is a sound card. _DSM converted to Devices/Properties/Pci~(0) should be injected to PEGP@0, but it is not and therefore cannot be booted. Devices/Properties/PCI~(1) works, and as with SSDT the properties are both injected to PEGP@0 and @1. Devices/AddProperties, however, works only if there is a blank PCI~(1) at Devices/Properties, and by works I mean all properties are separated between @0 and @1.
+12. _DSM at PEGP injects the properties to both the graphics and sound card. Also an issue with Clover: PEGP@0 is a graphics device, and PEGP@1 is a sound card. _DSM converted to Devices/Properties/Pci~(0) should be injected to PEGP@0, but it is not and therefore cannot be booted. Devices/Properties/PCI~(1) works, and as with SSDT the properties are both injected to PEGP@0 and @1. Devices/AddProperties, however, works only if there is a blank PCI~(1) at Devices/Properties, and by works I mean all properties are separated between @0 and @1. Some properties are not properly injected via AddProperties. Removing them seemed to have smoothened the graphics and also blinking problem at the start of acceleration.
 ## Replacements
 1. HDD to SSD.
 2. AR9285 to BCM94360HMB with little masking. AR9285 works by injecting a compatible id via config.plist/Devices/Properties/Pci(AR9285), but does not allow AirDrop or other continuity features, plus the incompatible bluetooth (outdated firmware uploader).
 3. +1 DDR3 4G RAM to original 4G. The printed frequency on the stock RAM is 1066 on the front side, and on the back it says 10600, and in Windows it is 1333, so 10600 lol.
+## Other things
+1. If you want, you may install and apply appropriate patches to enable Mojave or Catalina. Catalina is as slow as a sloth, but Mojave seems good. Use respective dosdude1's patcher. I recommend installing vanilla and then applying the patch. Apply "disable dGPU" patches and -no_compat_check boot flag in config.plist before trying to boot installer/installed volume. Legacy video patch is all that's needed from the patcher. For the "disable dGPU" patch, see https://github.com/RehabMan/OS-X-Clover-Laptop-Config
 ## Acknoledgment
 Apple for macOS
 

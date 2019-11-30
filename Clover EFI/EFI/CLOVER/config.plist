@@ -25,7 +25,7 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>Syntax Fix: M(LGPC) to XGPC, pair up with SSDT-LGPC.aml</string>
+					<string>Syntax Fix: M(LGPC) to XGPC, pair up with SSDT-LGPC.dsl</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -45,7 +45,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Sleep Fix: Rename LID0._PRW to XPRW, pair up with SSDT-PRW.aml</string>
+					<string>Sleep Fix: Rename LID0._PRW to XPRW, pair up with SSDT-PRW.dsl</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -57,7 +57,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Sleep Fix: Rename EH01._PRW to XPRW, pair up with SSDT-PRW.aml</string>
+					<string>Sleep Fix: Rename EH01._PRW to XPRW, pair up with SSDT-PRW.dsl</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -69,7 +69,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>CPU Power Management with ssdtPRGen: Rename M(PNOT) to PYES, pair up with ssdt.aml</string>
+					<string>CPU Power Management with ssdtPRGen: Rename M(PNOT) to PYES, pair up with SSDT-PRGen.dsl</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -79,7 +79,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>OS fix: Rename M(_INI_ in PCI0 to ZINI, pair up with SSDT-_INI-OSYS.aml</string>
+					<string>OS fix: Rename M(_INI_ in PCI0 to ZINI, pair up with SSDT-_INI-OSYS.dsl</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -154,6 +154,8 @@
 		</array>
 		<key>FixHeaders</key>
 		<true/>
+		<key>#Comment</key>
+		<string>FixHeaders not required for Mojave or higher</string>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -178,7 +180,9 @@
 		<key>Arguments</key>
 		<string>kext-dev-mode=1 applbkl=0</string>
 		<key>DefaultVolume</key>
-		<string>High Sierra</string>
+		<string>LastBootedVolume</string>
+		<key>#Comment</key>
+		<string>Add -no_compat_check if you are installing/have installed Mojave or higher</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -255,46 +259,6 @@
 				<string>AAPL00,blackscreen.preferences</string>
 				<key>Value</key>
 				<data>AAAACA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,NVMT</string>
-				<key>Value</key>
-				<data>DgN/IAAAAABACwgH4AtwC5ALAAA8BwsHEQcAAPCnIRQAAAABrwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAABAAAAAAAA/wAAAAC8AgFaCgQAAAACAABACwgHQAsIBw==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>NVPM</string>
-				<key>Value</key>
-				<data>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>NVCAP</string>
-				<key>Value</key>
-				<data>BAAAAAAAAwAIAAAAAAAABwAAAAA=</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,pwm-info</string>
-				<key>Value</key>
-				<data>AhgAZJBZAgAIUgAApRwAAAAEAAABAAAA</data>
 			</dict>
 			<dict>
 				<key>Device</key>
@@ -382,16 +346,6 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Key</key>
-				<string>model</string>
-				<key>Value</key>
-				<string>NVIDIA GeForce 315M</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
 				<string>hda-gfx</string>
 				<key>Value</key>
 				<string>onboard-1</string>
@@ -439,55 +393,6 @@
 		</array>
 		<key>Properties</key>
 		<dict>
-			<key>#PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,backlight-control</key>
-				<data>AQAAAA==</data>
-				<key>AAPL,aux-power-connected</key>
-				<data>AQAAAA==</data>
-				<key>AAPL00,inverter</key>
-				<data>AAAAAA==</data>
-				<key>AAPL,gray-page</key>
-				<data>AQAAAA==</data>
-				<key>AAPL,slot-name</key>
-				<string>Built-in</string>
-				<key>AAPL00,blackscreen.preferences</key>
-				<data>AAAACA==</data>
-				<key>device_type</key>
-				<string>NVDA,Parent</string>
-				<key>model</key>
-				<string>NVIDIA GeForce 315M</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>NVPM</key>
-				<data>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</data>
-				<key>NVCAP</key>
-				<data>BAAAAAAAAwAIAAAAAAAABwAAAAA=</data>
-				<key>@0,NVMT</key>
-				<data>DgN/IAAAAABACwgH4AtwC5ALAAA8BwsHEQcAAPCnIRQAAAABrwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAABAAAAAAAA/wAAAAC8AgFaCgQAAAACAABACwgHQAsIBw==</data>
-				<key>@0,pwm-info</key>
-				<data>AhgAZJBZAgAIUgAApRwAAAAEAAABAAAA</data>
-				<key>@0,built-in</key>
-				<data>AQ==</data>
-				<key>@0,connector-type</key>
-				<data>AAgAAA==</data>
-				<key>@0,backlight-control</key>
-				<data>AQAAAA==</data>
-				<key>@0,use-backlight-blanking</key>
-				<data></data>
-				<key>@0,AAPL,boot-display</key>
-				<data>AQ==</data>
-				<key>@0,display-cfg</key>
-				<data>AwEAAA==</data>
-				<key>@0,compatible</key>
-				<string>NVDA,NVMac</string>
-				<key>@0,display-type</key>
-				<string>LCD</string>
-				<key>@0,device_type</key>
-				<string>display</string>
-				<key>@0,name</key>
-				<string>NVDA,Display-A</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
 			<dict/>
 		</dict>
@@ -504,9 +409,7 @@
 		<false/>
 	</dict>
 	<key>DisableDrivers</key>
-	<array>
-		<string>VBoxHfs</string>
-	</array>
+	<array/>
 	<key>GUI</key>
 	<dict>
 		<key>Custom</key>
@@ -514,10 +417,12 @@
 			<key>Entries</key>
 			<array/>
 		</dict>
+		<key>Hide</key>
+		<array/>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -548,19 +453,17 @@
 		<key>AppleIntelCPUPM</key>
 		<true/>
 		<key>AppleRTC</key>
-		<true/>
+		<false/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>FakeCPUID</key>
 		<string>0x0206a0</string>
 		<key>ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-		</array>
+		<array/>
 		<key>KernelLapic</key>
-		<true/>
+		<false/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
