@@ -7,9 +7,8 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PRW", 0x00000000)
     External (_SB_.LID0, DeviceObj)    // (from opcode)
     External (_SB_.LID0.XPRW, PkgObj)    // (from opcode)
     External (_SB_.PCI0, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.EH01, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.EH01.XPRW, PkgObj)    // (from opcode)
-    External (_SB_.PCI0.EH02, DeviceObj)    // (from opcode)
+    External (_SB_.PCI0.EHC1, DeviceObj)    // (from opcode)
+    External (_SB_.PCI0.EHC1.XPRW, PkgObj)    // (from opcode)
     External (WKMD, FieldUnitObj)    // (from opcode)
     External (WOLE, FieldUnitObj)    // (from opcode)
 
@@ -26,7 +25,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PRW", 0x00000000)
         }
     }
 // Wake fix for USB
-    Method (_SB.PCI0.EH01.PRW, 0, NotSerialized)
+    Method (_SB.PCI0.EHC1._PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
     {
         If (_OSI ("Darwin"))
         {
@@ -38,11 +37,11 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PRW", 0x00000000)
         }
         Else
         {
-            Return (\_SB.PCI0.EH01.XPRW)
+            Return (\_SB.PCI0.EHC1.XPRW)
         }
     }
 // The below method also needs to be tested if it is required.
-    Method (_SB.LID0.PRW, 0, NotSerialized)
+    Method (_SB.LID0._PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
     {
         If (_OSI ("Darwin"))
         {

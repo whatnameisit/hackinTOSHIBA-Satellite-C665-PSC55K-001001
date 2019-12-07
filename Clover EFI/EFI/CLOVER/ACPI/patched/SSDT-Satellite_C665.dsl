@@ -6,7 +6,6 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     #define NO_DEFINITIONBLOCK
 
     #include "SSDT-_INI-OSYS.dsl"
-    #include "SSDT-ADP0.dsl"
     #include "SSDT-DMAC.dsl"
     #include "SSDT-EC.dsl"
     #include "SSDT-LGPC.dsl"
@@ -16,5 +15,6 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     #include "SSDT-SBUS.dsl"
     #include "SSDT-SLPB.dsl"
     #include "SSDT-ALS0.dsl"
+    #include "SSDT-UIAC.dsl"
 
 }

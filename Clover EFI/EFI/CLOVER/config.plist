@@ -89,9 +89,9 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>USB Power Fix: Rename  EHC1 to EH01</string>
+					<string>USB Fix: Rename  EHC1 to EH01</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>RUhDMQ==</data>
 					<key>Replace</key>
@@ -99,9 +99,9 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>USB Power Fix: Rename EHC2 to EH02</string>
+					<string>USB Fix: Rename EHC2 to EH02</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>RUhDMg==</data>
 					<key>Replace</key>
@@ -153,9 +153,7 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
-		<true/>
-		<key>#Comment</key>
-		<string>FixHeaders not required for Mojave or higher</string>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -177,12 +175,12 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>#Comment</key>
+		<string>-no_compat_check added for Mojave</string>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 applbkl=0</string>
+		<string>kext-dev-mode=1 applbkl=0 -no_compat_check</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
-		<key>#Comment</key>
-		<string>Add -no_compat_check if you are installing/have installed Mojave or higher</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -394,7 +392,10 @@
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
-			<dict/>
+			<dict>
+				<key>#Comment</key>
+				<string>DO NOT REMOVE THIS DEVICE OR 315M WILL FAIL AND REBOOT</string>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -415,10 +416,25 @@
 		<key>Custom</key>
 		<dict>
 			<key>Entries</key>
-			<array/>
+			<array>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Hidden</key>
+					<true/>
+					<key>Ignore</key>
+					<false/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Type</key>
+					<string>OSXRecovery</string>
+				</dict>
+			</array>
 		</dict>
 		<key>Hide</key>
-		<array/>
+		<array>
+			<string>Preboot</string>
+		</array>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -468,27 +484,13 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
-				<data>igKEwHRE</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
+				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
-				<data>igKEwOtE</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>igKEwHRC</data>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Replace</key>
-				<data>igKEwOtC</data>
+				<data>ILniAAAAkJA=</data>
 			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
