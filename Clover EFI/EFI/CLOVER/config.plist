@@ -79,13 +79,13 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>OS fix: Rename M(_INI_ in PCI0 to ZINI, pair up with SSDT-_INI-OSYS.dsl</string>
+					<string>OS fix: Rename _OSI to XOSI, pair up with SSDT-XOSI.dsl</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X0lOSQA=</data>
+					<data>X09TSQ==</data>
 					<key>Replace</key>
-					<data>WklOSQA=</data>
+					<data>WE9TSQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>

@@ -5,7 +5,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
 {
     #define NO_DEFINITIONBLOCK
 
-    #include "SSDT-_INI-OSYS.dsl"
+    #include "SSDT-XOSI.dsl"
     #include "SSDT-DMAC.dsl"
     #include "SSDT-EC.dsl"
     #include "SSDT-LGPC.dsl"
