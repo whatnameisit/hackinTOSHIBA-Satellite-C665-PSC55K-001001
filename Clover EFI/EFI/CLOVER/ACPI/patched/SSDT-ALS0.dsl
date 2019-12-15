@@ -1,4 +1,5 @@
 // Fake light sensor.
+// Acidanthera says this device is needed for backlight control in Catalina.
 // credit RehabMan
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "ALS0", 0x00000000)

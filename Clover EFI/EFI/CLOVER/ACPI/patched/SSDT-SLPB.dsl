@@ -3,7 +3,7 @@
 DefinitionBlock ("", "SSDT", 2, "hack", "SLPB", 0x00000000)
 {
 #endif
-    Device (SLPB)
+    Device (_SB.SLPB)
     {
         Name (_HID, EisaId ("PNP0C0E"))  // _HID: Hardware ID
         Method (_STA, 0, NotSerialized)  // _STA: Status
