@@ -15,7 +15,8 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     #include "SSDT-SBUS.dsl"
     #include "SSDT-SLPB.dsl"
     #include "SSDT-ALS0.dsl"
-    #include "SSDT-UIAC.dsl"
+    // #include "SSDT-UIAC.dsl" // for Sierra and High Sierra.
+    #include "SSDT-USBX.dsl"
     #include "SSDT-PNOT.dsl"
 
 }
