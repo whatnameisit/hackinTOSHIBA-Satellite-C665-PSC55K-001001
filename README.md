@@ -11,7 +11,7 @@ hackinTOSHIBA
 ## Issues
 1. The Brightness control does not work. Slider is available in PrefPane, but it does not affect the actual brightness. The display icon item recognizes the display as external, so it appears on the menu bar unless manually removed.
 2. AppleALC delays the boot time by 180 seconds. This is supposed to be related to unsupported HDMI sound codecs. Current workaround is to delete it and install VoodooHDA.kext. It seems that the earphone and the mic does not work with VoodooHDA.kext.
-3. Lid-sleep and -wake does not seem to work. I think I need to configure the ACPI LID0 device. NUMLOCK does not save its last setting. AppleSmartTouchpad.kext boots with it turned off, and VoodooPS2Controller.kext does not have the NUMLOCK feature.
+3. Lid-sleep and -wake does not seem to work. I think I need to configure the ACPI LID0 device.
 4. Continuity features do not seem to be working. I have injected BT4LEContinuityFixup.kext via Clover which still does not enable Handoff.
 ## Replacements
 1. HDD to SSD.
