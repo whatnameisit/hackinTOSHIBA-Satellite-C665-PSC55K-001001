@@ -9,7 +9,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     #include "SSDT-DMAC.dsl"
     #include "SSDT-EC.dsl"
     #include "SSDT-LGPC.dsl"
-    #include "SSDT-PNLF.dsl"
+    // #include "SSDT-PNLF.dsl" // backlight control currently does not work
     #include "SSDT-PRGen.dsl"
     #include "SSDT-PRW.dsl"
     #include "SSDT-SBUS.dsl"
@@ -18,5 +18,6 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     // #include "SSDT-UIAC.dsl" // for Sierra and High Sierra.
     #include "SSDT-USBX.dsl"
     #include "SSDT-PNOT.dsl"
+    #include "SSDT-ps2.dsl"
 
 }
