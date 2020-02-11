@@ -40,26 +40,29 @@ DefinitionBlock ("", "SSDT", 2, "hack", "ps2", 0x00000000)
         })
     }
 
-    Name (_SB.PCI0.LPCB.PS2K.RMCF, Package (0x02)
+    If (_OSI ("Darwin"))
     {
-        "Keyboard", 
-        Package (0x04)
+        Name (_SB.PCI0.LPCB.PS2K.RMCF, Package (0x02)
         {
-            "Custom ADB Map", 
-            Package (0x02)
+            "Keyboard", 
+            Package (0x04)
             {
-                Package (0x00){}, 
-                "e046=92"
-            }, 
+                "Custom ADB Map", 
+                Package (0x02)
+                {
+                    Package (0x00){}, 
+                    "e046=92"
+                }, 
 
-            "Custom PS2 Map", 
-            Package (0x02)
-            {
-                Package (0x00){}, 
-                "54=0"
+                "Custom PS2 Map", 
+                Package (0x02)
+                {
+                    Package (0x00){}, 
+                    "54=0"
+                }
             }
-        }
-    })
+        })
+    }
 #ifndef NO_DEFINITIONBLOCK
 }
 #endif
