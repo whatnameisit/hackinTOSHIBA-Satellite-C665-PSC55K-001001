@@ -1,5 +1,6 @@
 // Configuration data for RehabMan's USBInjectAll.kext: https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra-and-later.222266/
 // Applicable to Sierra and High Sierra.
+// Not necessary.
 // created for Toshiba Satellite C665 by whatnameisit
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0x00000000)

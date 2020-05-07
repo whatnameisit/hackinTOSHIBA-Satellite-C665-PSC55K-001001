@@ -9,14 +9,14 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     #include "SSDT-DMAC.dsl"
     #include "SSDT-EC.dsl"
     #include "SSDT-LGPC.dsl"
-    // #include "SSDT-PNLF.dsl" // backlight control currently does not work
+    #include "SSDT-PNLF.dsl"
     #include "SSDT-PRGen.dsl"
     #include "SSDT-PRW.dsl"
     #include "SSDT-SBUS.dsl"
     #include "SSDT-SLPB.dsl"
     #include "SSDT-ALS0.dsl"
-    // #include "SSDT-UIAC.dsl" // for Sierra and High Sierra.
-    #include "SSDT-USBX.dsl"
+    // #include "SSDT-UIAC.dsl" // customize USB power properties in Sierra and High Sierra.
+    // #include "SSDT-USBX.dsl" // inject USB power properties in Mojave or later
     #include "SSDT-PNOT.dsl"
     #include "SSDT-ps2.dsl"
 

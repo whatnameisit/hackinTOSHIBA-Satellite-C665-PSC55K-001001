@@ -1,4 +1,5 @@
-// Required for USB power to be injected by AppleBusPowerController
+// Required for USB power to be injected by AppleBusPowerController in Mojave or earlier
+// Required for booting in Catalina or higher.
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "fakeEC", 0x00000000)
 {

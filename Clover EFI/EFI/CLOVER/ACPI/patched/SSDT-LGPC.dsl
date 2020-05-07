@@ -1,5 +1,5 @@
 // This is to fix the poorly written M(LGPC) in OEM SSDT-TsbOdm.
-// Error-free statement is exported from RSDT-SSDT-TsbOdm.
+// Error-free statement is exported from RSDT-SSDT-TsbOdm which I have no idea how to obtain anymore.
 // Pair up with Syntax Fix: LGPC in config patches.
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "LGPC", 0x00000000)
