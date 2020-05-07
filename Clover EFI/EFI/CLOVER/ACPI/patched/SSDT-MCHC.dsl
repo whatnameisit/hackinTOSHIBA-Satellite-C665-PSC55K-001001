@@ -1,4 +1,4 @@
-// This device exists in Mac machines.
+// This works with SSDT-SBUS.dsl.
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "DMAC", 0x00000000)
 {
