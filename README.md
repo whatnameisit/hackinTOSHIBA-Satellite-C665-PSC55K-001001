@@ -9,16 +9,20 @@ hackinTOSHIBA
 6. Camera: Toshiba UVC Camera
 7. Audio: Coxenant CX20590
 ## Issues
-1. The Brightness control does not work. Slider is available in PrefPane, but it does not affect the actual brightness. The display icon item recognizes the display as external, so it appears on the menu bar unless manually removed.
-2. AppleALC delays the boot time by 180 seconds. This is supposed to be related to unsupported HDMI sound codecs. Current workaround is to delete it and install VoodooHDA.kext. It seems that the earphone and the mic does not work with VoodooHDA.kext.
-3. Lid-sleep and -wake does not seem to work. I think I need to configure the ACPI LID0 device.
-4. Continuity features do not seem to be working. I have injected BT4LEContinuityFixup.kext via Clover which still does not enable Handoff.
+1. AppleALC delays the boot time by 180 seconds. This is supposed to be related to unsupported HDMI sound codecs. Current workaround is to delete it and install VoodooHDA.kext. It seems that the earphone and the mic do not work with VoodooHDA.kext.
+2. Lid-wake does not seem to work. I think I need to configure the ACPI LID0 device.
+3. NVidia graphics properties injection by itself does not work with Devices/Properties or _DSM. The only way to use Devices/Properties or _DSM is to inject the properties into HDMI audio device which is really dumb. Or use AddProperties and an empty HDMI audio Devices/Properties dictionary which is even dumber.
+4. Acidanthera's VoodooPS2 package works well only with clickpads. The touchpad on this laptop is not a clickpad and as a current issue the buttons do not work. Also, the kext limits the size of the touchpad and the movements only work in the middle region of size of a square. RehabMan's VoodooPS2 package does not support many gestures, but the movement is great.
+5. The keyboard's fn+f4 makes the laptop freeze, forcing you to force shutdown by pressing the power button. I need to figure out a way to disable the PS2 code. Also, it'd be great to map fn+F6/F7 to control the brightness.
 ## Replacements
 1. HDD to SSD.
-2. AR9285 to BCM94360HMB with little masking. AR9285 works by injecting a compatible id via config.plist/Devices/Properties/Pci(AR9285), but does not allow AirDrop or other continuity features, plus the incompatible bluetooth (outdated firmware uploader).
+2. AR9285 to DW1550 with little [pin masking](https://i.applelife.ru/2019/03/448862_448858_ceh123_whitelisthack.jpg) to enable bluetooth. AR9285 works by injecting a compatible ID via config.plist/Devices/Properties/Pci(AR9285), but does not allow AirDrop or other continuity features, plus the incompatible bluetooth (outdated firmware uploader).
 3. +1 DDR3 4G RAM to original 4G. The printed frequency on the stock RAM is 1066 on the front side, and on the back it says 10600, and in Windows it is 1333, so 10600 lol.
 ## Other things
-1. If you want, you may install and apply appropriate patches to enable Mojave or Catalina. Catalina is as slow as a sloth, but Mojave seems good. Use respective dosdude1's patcher. I recommend installing vanilla and then applying the patch. Apply "disable dGPU" patches and -no_compat_check boot flag in config.plist before trying to boot installer/installed volume. Legacy video patch is all that's needed from the patcher. For the "disable dGPU" patch, see https://github.com/RehabMan/OS-X-Clover-Laptop-Config
+1. Update kexts and Clover. Choose between Acidanthera's or RehabMan's VoodooPS2 package to your taste.
+2. Screen backlight works only with AppleBacklightFixup.kext. WhateverGreen's backlight function needs to be disabled with the boot-arg "applbkl=0" and AppleBacklightFixup.kext's IOProbeScore has to be set to 5500 per [WhateverGreen's FAQ](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md).
+3. If you want, you may install and apply appropriate patches to enable Mojave or Catalina. Catalina is as slow as a sloth, but Mojave seems good. Use respective dosdude1's patcher. I recommend installing vanilla on a different machine, installing the SSD on this laptop, and then applying the patch.
+4. If you install Mojave or higher, disable or delete EHC2 to EH02 rename as it is not needed in those OS versions.
 ## Acknoledgment
 Apple for macOS
 
