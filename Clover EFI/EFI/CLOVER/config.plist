@@ -87,7 +87,7 @@
 					<key>Comment</key>
 					<string>USB Fix for High Sierra: Rename EHC2 to EH02</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>RUhDMg==</data>
 					<key>Replace</key>
@@ -146,7 +146,7 @@
 		<key>#Comment</key>
 		<string>-no_compat_check added for Mojave</string>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 applbkl=0 -no_compat_check</string>
+		<string>applbkl=0 -no_compat_check</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -378,7 +378,8 @@
 		<false/>
 	</dict>
 	<key>DisableDrivers</key>
-	<array/>
+	<array>
+	</array>
 	<key>GUI</key>
 	<dict>
 		<key>Custom</key>
@@ -443,7 +444,8 @@
 		<key>FakeCPUID</key>
 		<string>0x0206a0</string>
 		<key>ForceKextsToLoad</key>
-		<array/>
+		<array>
+		</array>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
