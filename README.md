@@ -23,6 +23,9 @@ hackinTOSHIBA
 2. Screen backlight works only with AppleBacklightFixup.kext. WhateverGreen's backlight function needs to be disabled with the boot-arg "applbkl=0" and AppleBacklightFixup.kext's IOProbeScore has to be set to 5500 per [WhateverGreen's FAQ](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md).
 3. If you want, you may install and apply appropriate patches to enable Mojave or Catalina. Catalina is as slow as a sloth, but Mojave seems good. Use respective dosdude1's patcher. I recommend installing vanilla on a different machine, installing the SSD on this laptop, and then applying the patch.
 4. If you install Mojave or higher, disable or delete EHC2 to EH02 rename as it is not needed in those OS versions.
+5. You can enable continuity for unsupported SMBIOS.
+- https://x86.co.kr/macnews/4591366
+- https://forums.macrumors.com/threads/macos-10-15-catalina-on-unsupported-macs.2183772/page-233?post=27895873#post-27895873
 ## Acknoledgment
 Apple for macOS
 
