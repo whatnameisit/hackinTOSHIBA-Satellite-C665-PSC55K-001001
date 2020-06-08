@@ -25,6 +25,16 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>USB port match fix: EHC2 to EH02 to inject data only via USBPorts.kext</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>RUhDMg==</data>
+					<key>Replace</key>
+					<data>RUgwMg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>Syntax Fix: M(LGPC) to XGPC, pair up with SSDT-LGPC.dsl</string>
 					<key>Disabled</key>
 					<false/>
@@ -45,16 +55,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Sleep Fix: Rename LID0._PRW to XPRW, pair up with SSDT-PRW.dsl</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1BSVxIGAgoNCgQ=</data>
-					<key>Replace</key>
-					<data>WFBSVxIGAgoNCgQ=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Sleep Fix: Rename EHC1._PRW to XPRW, pair up with SSDT-PRW.dsl</string>
 					<key>Disabled</key>
 					<false/>
@@ -62,6 +62,16 @@
 					<data>X1BSVxIGAgoNCgM=</data>
 					<key>Replace</key>
 					<data>WFBSVxIGAgoNCgM=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Sleep Fix: Rename Lid0._PRW to XPRW, pair up with SSDT-PRW.dsl</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1BSVxIGAgoNCgQ=</data>
+					<key>Replace</key>
+					<data>WFBSVxIGAgoNCgQ=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -85,13 +95,13 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>USB Fix for High Sierra: Rename EHC2 to EH02</string>
+					<string>GFX cleanup: Rename VGA._DSM to XDSM, pair up with SSDT-NV.dsl</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>RUhDMg==</data>
+					<data>X0RTTQQ=</data>
 					<key>Replace</key>
-					<data>RUgwMg==</data>
+					<data>WERTTQQ=</data>
 				</dict>
 			</array>
 		</dict>
@@ -143,10 +153,8 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>#Comment</key>
-		<string>-no_compat_check added for Mojave</string>
 		<key>Arguments</key>
-		<string>applbkl=0 -no_compat_check</string>
+		<string>applbkl=0 brcmfx-country=#a</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -164,202 +172,9 @@
 		<false/>
 		<key>NoDefaultProperties</key>
 		<true/>
-		<key>AddProperties</key>
-		<array>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL,backlight-control</string>
-				<key>Value</key>
-				<data>AQAAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>VRAM,totalsize</string>
-				<key>Value</key>
-				<data>AAAAIA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL,aux-power-connected</string>
-				<key>Value</key>
-				<data>AQAAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL00,inverter</string>
-				<key>Value</key>
-				<data>AAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL,gray-page</string>
-				<key>Value</key>
-				<data>AQAAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL00,blackscreen.preferences</string>
-				<key>Value</key>
-				<data>AAAACA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,built-in</string>
-				<key>Value</key>
-				<data>AQ==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,connector-type</string>
-				<key>Value</key>
-				<data>AgAAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,backlight-control</string>
-				<key>Value</key>
-				<data>AQAAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,use-backlight-blanking</string>
-				<key>Value</key>
-				<data>AAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,AAPL,boot-display</string>
-				<key>Value</key>
-				<data>AQ==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,display-cfg</string>
-				<key>Value</key>
-				<data>AwEAAA==</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL,slot-name</string>
-				<key>Value</key>
-				<string>Built-in</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>device_type</string>
-				<key>Value</key>
-				<string>NVDA,Parent</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>hda-gfx</string>
-				<key>Value</key>
-				<string>onboard-1</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,compatible</string>
-				<key>Value</key>
-				<string>NVDA,NVMac</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,display-type</string>
-				<key>Value</key>
-				<string>LCD</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,device_type</string>
-				<key>Value</key>
-				<string>display</string>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>@0,name</string>
-				<key>Value</key>
-				<string>NVDA,Display-A</string>
-			</dict>
-		</array>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
+			<key>#PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
 			<dict>
 				<key>#Comment</key>
 				<string>DO NOT REMOVE THIS DEVICE OR 315M WILL FAIL AND REBOOT</string>
@@ -378,8 +193,7 @@
 		<false/>
 	</dict>
 	<key>DisableDrivers</key>
-	<array>
-	</array>
+	<array/>
 	<key>GUI</key>
 	<dict>
 		<key>Custom</key>
@@ -392,8 +206,6 @@
 					<key>Hidden</key>
 					<true/>
 					<key>Ignore</key>
-					<false/>
-					<key>NoCaches</key>
 					<false/>
 					<key>Type</key>
 					<string>OSXRecovery</string>
@@ -444,8 +256,7 @@
 		<key>FakeCPUID</key>
 		<string>0x0206a0</string>
 		<key>ForceKextsToLoad</key>
-		<array>
-		</array>
+		<array/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>

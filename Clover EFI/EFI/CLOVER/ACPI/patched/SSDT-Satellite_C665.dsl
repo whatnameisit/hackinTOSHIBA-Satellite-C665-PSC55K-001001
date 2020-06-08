@@ -6,7 +6,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     #define NO_DEFINITIONBLOCK
 
     #include "SSDT-XOSI.dsl"
-    #include "SSDT-DMAC.dsl"
+    #include "SSDT-MCHC.dsl"
     #include "SSDT-EC.dsl"
     #include "SSDT-LGPC.dsl"
     #include "SSDT-PNLF.dsl"
@@ -19,5 +19,6 @@ DefinitionBlock ("", "SSDT", 2, "hack", "C665", 0)
     // #include "SSDT-USBX.dsl" // inject USB power properties in Mojave or later
     #include "SSDT-PNOT.dsl"
     #include "SSDT-ps2.dsl"
+    #include "SSDT-NV.dsl"
 
 }

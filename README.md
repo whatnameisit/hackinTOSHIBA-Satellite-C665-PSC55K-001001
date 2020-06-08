@@ -11,9 +11,8 @@ hackinTOSHIBA
 ## Issues
 1. AppleALC delays the boot time by 180 seconds. This is supposed to be related to unsupported HDMI sound codecs. Current workaround is to delete it and install VoodooHDA.kext. It seems that the earphone and the mic do not work with VoodooHDA.kext.
 2. Lid-wake does not seem to work. I think I need to configure the ACPI LID0 device.
-3. NVidia graphics properties injection by itself does not work with Devices/Properties or _DSM. The only way to use Devices/Properties or _DSM is to inject the properties into HDMI audio device which is really dumb. Or use AddProperties and an empty HDMI audio Devices/Properties dictionary which is even dumber.
-4. Acidanthera's VoodooPS2 package works well only with clickpads. The touchpad on this laptop is not a clickpad and as a current issue the buttons do not work. Also, the kext limits the size of the touchpad and the movements only work in the middle region of size of a square. RehabMan's VoodooPS2 package does not support many gestures, but the movement is great.
-5. The keyboard's fn+f4 makes the laptop freeze, forcing you to force shutdown by pressing the power button. I need to figure out a way to disable the PS2 code. Also, it'd be great to map fn+F6/F7 to control the brightness.
+3. Acidanthera's VoodooPS2 package works well only with clickpads. The touchpad on this laptop is not a clickpad and as a current issue the buttons do not work. Also, the kext limits the size of the touchpad and the movements only work in the middle region of size of a square. RehabMan's VoodooPS2 package does not support many gestures, but the movement is great.
+4. The keyboard's fn+f4 makes the laptop freeze, forcing you to force shutdown by pressing the power button. I need to figure out a way to disable the PS2 code. Also, it'd be great to map fn+F6/F7 to control the brightness.
 ## Replacements
 1. HDD to SSD.
 2. AR9285 to DW1550 with little [pin masking](https://i.applelife.ru/2019/03/448862_448858_ceh123_whitelisthack.jpg) to enable bluetooth. AR9285 works by injecting a compatible ID via config.plist/Devices/Properties/Pci(AR9285), but does not allow AirDrop or other continuity features, plus the incompatible bluetooth (outdated firmware uploader).
@@ -26,6 +25,7 @@ hackinTOSHIBA
 5. You can enable continuity for unsupported SMBIOS.
     - https://x86.co.kr/macnews/4591366
     - https://forums.macrumors.com/threads/macos-10-15-catalina-on-unsupported-macs.2183772/page-233?post=27895873#post-27895873
+6. Graphics and HDMI devices are now properly separated by replacing FFFF _ADR of PEGP with a new one by disabling PEGP and making a new device with _ADR of One.
 ## Acknoledgment
 Apple for macOS
 
