@@ -20,8 +20,55 @@ DefinitionBlock ("", "SSDT", 2, "what", "NVidia", 0)
                 })
             }
 
-            Return (Package (0x18)
+            Return (Package ()
             {
+                "AAPL,backlight-control", 
+                Buffer (0x04)
+                {
+                     0x01, 0x00, 0x00, 0x00                         
+                }, 
+
+                "AAPL,HasLid", 
+                Buffer (0x04)
+                {
+                     0x01, 0x00, 0x00, 0x00                         
+                }, 
+
+                "AAPL,HasPanel", 
+                Buffer (0x04)
+                {
+                     0x01, 0x00, 0x00, 0x00                         
+                }, 
+
+                "@0,pwm-info", 
+                Buffer (0x14)
+                {
+                    /* 0000 */  0x01, 0x14, 0x00, 0x64, 0xA8, 0x61, 0x00, 0x00,
+                    /* 0008 */  0x08, 0x52, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00,
+                    /* 0010 */  0x00, 0x04, 0x00, 0x00                         
+                }, 
+
+                "rom-revision", 
+                Buffer (0x06)
+                {
+                    "lolol"
+                }, 
+
+                "NVPM", 
+                Buffer (0x1C)
+                {
+                    /* 0000 */  0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                    /* 0008 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                    /* 0010 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                    /* 0018 */  0x00, 0x00, 0x00, 0x00                         
+                }, 
+
+                "@0,backlight-control", 
+                Buffer (0x04)
+                {
+                     0x01, 0x00, 0x00, 0x00                         
+                }, 
+
                 "VRAM,totalsize", 
                 Buffer (0x04)
                 {
