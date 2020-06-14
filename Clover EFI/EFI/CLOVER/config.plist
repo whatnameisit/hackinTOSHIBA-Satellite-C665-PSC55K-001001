@@ -174,10 +174,44 @@
 		<true/>
 		<key>Properties</key>
 		<dict>
-			<key>#PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>#Comment</key>
-				<string>DO NOT REMOVE THIS DEVICE OR 315M WILL FAIL AND REBOOT</string>
+				<key>@0,display-type</key>
+				<string>LCD</string>
+				<key>@0,device_type</key>
+				<string>display</string>
+				<key>device_type</key>
+				<string>NVDA,Parent</string>
+				<key>rom-revision</key>
+				<string>whatnameisit</string>
+				<key>@0,name</key>
+				<string>NVDA,Display-A</string>
+				<key>@0,compatible</key>
+				<string>NVDA,NVMac</string>
+				<key>model</key>
+				<string>NVIDIA GeForce GT315M</string>
+				<key>AAPL,HasPanel</key>
+				<data>AQAAAA==</data>
+				<key>@0,backlight-control</key>
+				<data>AQAAAA==</data>
+				<key>@0,display-cfg</key>
+				<data>AwEDAP//AAE=</data>
+				<key>VRAM,totalsize</key>
+				<data>AAAAIA==</data>
+				<key>AAPL,backlight-control</key>
+				<data>AQAAAA==</data>
+				<key>NVCAP</key>
+				<data>BAAAAAAAAwAMAAAAAAAABwAAAAA=</data>
+				<key>NVPM</key>
+				<data>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</data>
+				<key>@0,pwm-info</key>
+				<data>ARQAZKhhAAAIUgAAAQAAAAAEAAA=</data>
+				<key>@0,built-in</key>
+				<data></data>
+				<key>@0,AAPL,boot-display</key>
+				<data></data>
+				<key>@0,display-type 9 6 4</key>
+				<data></data>
 			</dict>
 		</dict>
 		<key>USB</key>
