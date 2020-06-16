@@ -19,7 +19,7 @@ hackinTOSHIBA
 3. +1 DDR3 4G RAM to original 4G. The printed frequency on the stock RAM is 1066 on the front side, and on the back it says 10600, and in Windows it is 1333, so 10600 lol.
 ## Other things
 1. Update kexts and Clover. Choose between Acidanthera's or RehabMan's VoodooPS2 package to your taste.
-2. Screen backlight works only with AppleBacklightFixup.kext. WhateverGreen's backlight function needs to be disabled with the boot-arg "applbkl=0" and AppleBacklightFixup.kext's IOProbeScore has to be set to 5500 per [WhateverGreen's FAQ](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md).
+2. Screen backlight works only with AppleBacklightFixup.kext. WhateverGreen's backlight function needs to be disabled with the boot-arg "applbkl=0" and AppleBacklightFixup.kext's IOProbeScore has to be set to 5500 per [WhateverGreen's FAQ](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.OldPlugins.en.md).
 3. If you want, you may install and apply appropriate patches to enable Mojave or Catalina. Catalina is as slow as a sloth, but Mojave seems good. Use respective dosdude1's patcher. I recommend installing vanilla on a different machine, installing the SSD on this laptop, and then applying the patch.
 4. If you install Mojave or higher, disable or delete EHC2 to EH02 rename as it is not needed in those OS versions.
 5. You can enable continuity for unsupported SMBIOS.
