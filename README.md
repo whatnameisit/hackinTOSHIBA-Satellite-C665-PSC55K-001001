@@ -3,7 +3,7 @@ hackinTOSHIBA
 ## System Information
 1. Name: Toshiba Satellite C665
 2. CPU: Pentium B940
-3. Graphics: Nvidia GeForce 315M 512mb (Intel HD Graphics 2000 is factory disabled)
+3. Graphics: Nvidia GeForce 315M 1024mb (Intel HD Graphics 2000 is factory disabled)
 4. Wifi: AR9285 replaced with DW1550
 5. Card Reader: Realtek 0138:0BDA
 6. Camera: Toshiba UVC Camera
