@@ -1,8 +1,6 @@
-// This SSDT injects information needed for correct SMBus control.
-#ifndef NO_DEFINITIONBLOCK
+// This SSDT injects information needed for correct SMBus control in macOS.
 DefinitionBlock ("", "SSDT", 2, "hack", "SBUS", 0x00000000)
 {
-#endif
     External (_SB_.PCI0.SBUS, DeviceObj)    // (from opcode)
 
     Scope (_SB.PCI0.SBUS)
@@ -46,7 +44,5 @@ DefinitionBlock ("", "SSDT", 2, "hack", "SBUS", 0x00000000)
             }
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
 

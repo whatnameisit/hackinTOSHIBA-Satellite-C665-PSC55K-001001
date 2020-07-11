@@ -2,10 +2,8 @@
 // Thus, the graphics properties are also injected into the HDMI audio device.
 // Disabling PEGP and creating HDAU with _ADR of One lets graphics and HDMI audio have separate properties.
 // Created by whatnameisit
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "what", "NVidia", 0)
 {
-#endif
 
     Method (_SB.PCI0.PEG0.PEGP._STA, 0, NotSerialized)  // _STA: Status
     {
@@ -35,7 +33,5 @@ DefinitionBlock ("", "SSDT", 2, "what", "NVidia", 0)
             Return (Zero)
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
 

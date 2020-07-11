@@ -1,8 +1,6 @@
 // SSDT for renaming KBC to PS2K in Darwin only and remapping PS2 keys
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "ps2", 0x00000000)
 {
-#endif
     If (_OSI ("Darwin"))
     {
         Name (\_SB.PCI0.LPCB.KBC._STA, Zero)  // _STA: Status
@@ -48,10 +46,12 @@ DefinitionBlock ("", "SSDT", 2, "hack", "ps2", 0x00000000)
             Package (0x04)
             {
                 "Custom ADB Map", 
-                Package (0x02)
+                Package (0x04)
                 {
                     Package (0x00){}, 
-                    "e046=92"
+                    "e046=92", 
+                    "38=37", 
+                    "e05b=3a"
                 }, 
 
                 "Custom PS2 Map", 
@@ -63,7 +63,5 @@ DefinitionBlock ("", "SSDT", 2, "hack", "ps2", 0x00000000)
             }
         })
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
 

@@ -1,9 +1,7 @@
 // Immediate wake fix
 // This SSDT is created for Satellite C665 by whatnameisit
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "what", "_PRW", 0x00000000)
 {
-#endif
     External (_SB_.LID0, DeviceObj)    // (from opcode)
     External (_SB_.LID0.XPRW, PkgObj)    // (from opcode)
     External (_SB_.PCI0, DeviceObj)    // (from opcode)
@@ -40,7 +38,6 @@ DefinitionBlock ("", "SSDT", 2, "what", "_PRW", 0x00000000)
             Return (\_SB.PCI0.EHC1.XPRW)
         }
     }
-// The below method also needs to be tested if it is required.
     Method (_SB.LID0._PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
     {
         If (_OSI ("Darwin"))
@@ -56,6 +53,4 @@ DefinitionBlock ("", "SSDT", 2, "what", "_PRW", 0x00000000)
             Return (\_SB.LID0.XPRW)
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif

@@ -1,10 +1,8 @@
 // Backlight control device in macOS
 // NVidia Graphics brightness control does not work with WhateverGreen.
 // You must use AppleBacklightFixup.kext.
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "PNLF", 0x00000000)
 {
-#endif
     External (_SB_.PCI0.PEG0.VGA_, DeviceObj)    // (from opcode)
     External (RMCF.BKLT, IntObj)    // (from opcode)
     External (RMCF.FBTP, IntObj)    // (from opcode)
@@ -12,12 +10,9 @@ DefinitionBlock ("", "SSDT", 2, "hack", "PNLF", 0x00000000)
     External (RMCF.LEVW, IntObj)    // (from opcode)
     External (RMCF.LMAX, IntObj)    // (from opcode)
 
-    If (_OSI ("Darwin"))
+    Scope (_SB.PCI0.PEG0.VGA)
     {
-        Scope (_SB.PCI0.PEG0.VGA)
-        {
-            OperationRegion (RMP3, PCI_Config, Zero, 0x14)
-        }
+        OperationRegion (RMP3, PCI_Config, Zero, 0x14)
     }
 
     Device (_SB.PCI0.PEG0.VGA.PNLF)
@@ -281,6 +276,4 @@ DefinitionBlock ("", "SSDT", 2, "hack", "PNLF", 0x00000000)
             }
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif

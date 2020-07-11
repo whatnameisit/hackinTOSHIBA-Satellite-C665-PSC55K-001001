@@ -1,10 +1,8 @@
 // This is to fix the poorly written M(LGPC) in OEM SSDT-TsbOdm.
 // Error-free statement is exported from RSDT-SSDT-TsbOdm which I have no idea how to obtain anymore.
 // Pair up with Syntax Fix: LGPC in config patches.
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "what", "LGPC", 0x00000000)
 {
-#endif
     External (_SB_.PCI0.GFX0.GHDS, MethodObj)    // 1 Arguments (from opcode)
     External (_SB_.PCI0.GFX0.STBL, MethodObj)    // 2 Arguments (from opcode)
     External (_SB_.PCI0.PEG0.VGA_, DeviceObj)    // (from opcode)
@@ -107,7 +105,5 @@ DefinitionBlock ("", "SSDT", 2, "what", "LGPC", 0x00000000)
 
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
 

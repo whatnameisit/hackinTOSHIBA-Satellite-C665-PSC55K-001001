@@ -1,10 +1,8 @@
 // USB power property injection: https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra-and-later.222266/
 // This only works in Mojave or later. For Sierra and High Sierra, look into the link above.
 // created for Toshiba Satellite C665 by whatnameisit
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "USBX", 0x00000000)
 {
-#endif
     Device (_SB.USBX)
     {
         Name (_ADR, Zero)  // _ADR: Address
@@ -31,7 +29,5 @@ DefinitionBlock ("", "SSDT", 2, "hack", "USBX", 0x00000000)
             })
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
 

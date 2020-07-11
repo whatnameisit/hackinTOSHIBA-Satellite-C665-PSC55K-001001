@@ -8,9 +8,113 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Master SSDT</string>
+				<string>Fake light sensor</string>
 				<key>Path</key>
-				<string>SSDT-Satellite_C665.aml</string>
+				<string>SSDT-ALS0.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB power fix</string>
+				<key>Path</key>
+				<string>SSDT-EC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fix sound</string>
+				<key>Path</key>
+				<string>SSDT-HPET.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fix OEM LGPC method</string>
+				<key>Path</key>
+				<string>SSDT-LGPC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBUS compatibility 1</string>
+				<key>Path</key>
+				<string>SSDT-MCHC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Separate VGA and HDMI devices</string>
+				<key>Path</key>
+				<string>SSDT-NV.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Backlight control</string>
+				<key>Path</key>
+				<string>SSDT-PNLF.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>CPUPM patch 1</string>
+				<key>Path</key>
+				<string>SSDT-PNOT.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>CPUPM patch 2</string>
+				<key>Path</key>
+				<string>SSDT-PRGen.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Sleep fix</string>
+				<key>Path</key>
+				<string>SSDT-PRW.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Remap PS2</string>
+				<key>Path</key>
+				<string>SSDT-ps2.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBUS compatibility 2</string>
+				<key>Path</key>
+				<string>SSDT-SBUS.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add SLPB device</string>
+				<key>Path</key>
+				<string>SSDT-SLPB.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fix OS recognition</string>
+				<key>Path</key>
+				<string>SSDT-XOSI.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -80,7 +184,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
@@ -96,7 +200,7 @@
 				<key>Find</key>
 				<data>RUhDMg==</data>
 				<key>TableSignature</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Limit</key>
@@ -106,7 +210,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
@@ -116,13 +220,13 @@
 				<key>Replace</key>
 				<data>WEdQQwk=</data>
 				<key>Comment</key>
-				<string>Syntax Fix: M(LGPC) to XGPC, pair up with SSDT-LGPC.dsl</string>
+				<string>Syntax Fix: M(LGPC) to XGPC, pair up with SSDT-LGPC.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Find</key>
 				<data>TEdQQwk=</data>
 				<key>TableSignature</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Limit</key>
@@ -132,7 +236,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
@@ -148,7 +252,7 @@
 				<key>Find</key>
 				<data>QUJDREVGR0g=</data>
 				<key>TableSignature</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Limit</key>
@@ -158,7 +262,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
@@ -168,13 +272,13 @@
 				<key>Replace</key>
 				<data>WFBSVxIGAgoNCgM=</data>
 				<key>Comment</key>
-				<string>Sleep Fix: Rename EHC1._PRW to XPRW, pair up with SSDT-PRW.dsl</string>
+				<string>Sleep Fix: Rename EHC1._PRW to XPRW, pair up with SSDT-PRW.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Find</key>
 				<data>X1BSVxIGAgoNCgM=</data>
 				<key>TableSignature</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Limit</key>
@@ -184,7 +288,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
@@ -194,13 +298,13 @@
 				<key>Replace</key>
 				<data>WFBSVxIGAgoNCgQ=</data>
 				<key>Comment</key>
-				<string>Sleep Fix: Rename Lid0._PRW to XPRW, pair up with SSDT-PRW.dsl</string>
+				<string>Sleep Fix: Rename Lid0._PRW to XPRW, pair up with SSDT-PRW.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Find</key>
 				<data>X1BSVxIGAgoNCgQ=</data>
 				<key>TableSignature</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Limit</key>
@@ -210,7 +314,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
@@ -220,13 +324,13 @@
 				<key>Replace</key>
 				<data>UFlFUwg=</data>
 				<key>Comment</key>
-				<string>CPU Power Management with ssdtPRGen: Rename M(PNOT) to PYES, pair up with SSDT-PRGen.dsl</string>
+				<string>CPU Power Management with ssdtPRGen: Rename M(PNOT) to PYES, pair up with SSDT-PNOT.aml and SSDT-PRGen.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Find</key>
 				<data>UE5PVAg=</data>
 				<key>TableSignature</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Limit</key>
@@ -236,7 +340,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAAAAAAA=</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
@@ -246,23 +350,49 @@
 				<key>Replace</key>
 				<data>WE9TSQ==</data>
 				<key>Comment</key>
-				<string>OS fix: Rename _OSI to XOSI, pair up with SSDT-XOSI.dsl</string>
+				<string>OS fix: Rename _OSI to XOSI, pair up with SSDT-XOSI.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Find</key>
 				<data>X09TSQ==</data>
 				<key>TableSignature</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Limit</key>
 				<integer>0</integer>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Sound fix: Rename HPET._CRS to XCRS Rename, pair up with SSDT-HPET.aml</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X0NSUwig</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>Replace</key>
+				<data>WENSUwig</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>FadtEnableReset</key>
-			<false/>
+			<true/>
 			<key>NormalizeHeaders</key>
 			<false/>
 			<key>RebaseRegions</key>
@@ -320,6 +450,8 @@
 			<false/>
 			<key>ProvideCustomSlide</key>
 			<true/>
+			<key>ProvideMaxSlide</key>
+			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<false/>
 			<key>SetupVirtualMap</key>
@@ -334,6 +466,15 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>#PciRoot(0x0)/Pci(0x1F,0x0)</key>
+			<dict>
+				<key>revision-id</key>
+				<data>BQAAAA==</data>
+				<key>subsystem-id</key>
+				<data>cHIAAA==</data>
+				<key>subsystem-vendor-id</key>
+				<data>hoAAAA==</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>@0,display-type</key>
@@ -370,8 +511,16 @@
 				<data></data>
 				<key>@0,AAPL,boot-display</key>
 				<data></data>
-				<key>@0,display-type 9 6 4</key>
-				<data></data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>class-code</key>
+				<data>/////w==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>12</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -426,6 +575,22 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCProcessor</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Disable check on LPC to try C-State activation</string>
+				<key>BundlePath</key>
+				<string>EFICheckDisabler.kext</string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -499,13 +664,13 @@
 				<key>Comment</key>
 				<string>Audio patches</string>
 				<key>BundlePath</key>
-				<string>VoodooHDA.kext</string>
+				<string>AppleALC.kext</string>
 				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooHDA</string>
+				<string>Contents/MacOS/AppleALC</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -678,6 +843,34 @@
 		</dict>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha (Delete this patch after unlocking MSR 0xE2)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>ILniAAAADzA=</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>Replace</key>
+				<data>ILniAAAAkJA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
 			<dict>
 				<key>Base</key>
 				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
@@ -922,8 +1115,6 @@
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
-			<key>BlacklistAppleUpdate</key>
-			<true/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
 			<key>ExposeSensitiveData</key>
@@ -1035,6 +1226,8 @@
 			<array>
 				<string>EFILoginHiDPI</string>
 				<string>EFIBluetoothDelay</string>
+				<string>efi-boot-device</string>
+				<string>efi-boot-device-data</string>
 				<string>LocationServicesEnabled</string>
 				<string>SystemAudioVolume</string>
 				<string>SystemAudioVolumeDB</string>
@@ -1050,10 +1243,10 @@
 			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
 			<array>
 				<string>Boot0080</string>
+				<string>BootOrder</string>
 				<string>Boot0081</string>
 				<string>Boot0082</string>
 				<string>BootNext</string>
-				<string>BootOrder</string>
 			</array>
 		</dict>
 		<key>WriteFlash</key>
@@ -1095,6 +1288,8 @@
 		<dict>
 			<key>EnableJumpstart</key>
 			<true/>
+			<key>GlobalConnect</key>
+			<false/>
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
@@ -1128,7 +1323,7 @@
 			<string>OpenRuntime.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>#AudioDxe.efi</string>
-			<string>OpenUsbKbDxe.efi</string>
+			<string>Ps2KeyboardDxe.efi</string>
 			<string>HfsPlusLegacy.efi</string>
 		</array>
 		<key>Input</key>
@@ -1140,7 +1335,7 @@
 			<key>KeyMergeThreshold</key>
 			<integer>2</integer>
 			<key>KeySupport</key>
-			<false/>
+			<true/>
 			<key>KeySupportMode</key>
 			<string>Auto</string>
 			<key>KeySwap</key>

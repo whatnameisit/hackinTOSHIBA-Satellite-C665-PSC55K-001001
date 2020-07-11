@@ -1,9 +1,9 @@
 // athlonreg's XOSI patch for OC, modified for win7 systems like this hackinTOSHIBA
+// original DSDT found in https://github.com/daliansky/OC-little/blob/master/04-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%A1%A5%E4%B8%81/SSDT-OC-XOSI.dsl
 // _OSI to XOSI is necessary in config.plist
-#ifndef NO_DEFINITIONBLOCK
+// OSID does not exist on this laptop therefore no need for renamed to XSID
 DefinitionBlock ("", "SSDT", 2, "hack", "XOSI", 0x00000000)
 {
-#endif
     Method(XOSI, 1)
     {
         If (_OSI ("Darwin"))
@@ -34,6 +34,4 @@ DefinitionBlock ("", "SSDT", 2, "hack", "XOSI", 0x00000000)
             Return (_OSI (Arg0))
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif

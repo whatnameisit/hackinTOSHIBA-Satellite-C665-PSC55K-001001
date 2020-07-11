@@ -1,8 +1,6 @@
 // This works with SSDT-SBUS.dsl.
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "DMAC", 0x00000000)
 {
-#endif
     
     Device (_SB.PCI0.MCHC)
     {
@@ -19,6 +17,4 @@ DefinitionBlock ("", "SSDT", 2, "hack", "DMAC", 0x00000000)
             }
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif

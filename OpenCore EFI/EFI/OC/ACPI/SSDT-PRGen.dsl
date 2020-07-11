@@ -1,14 +1,13 @@
-// This SSDT is created by Pike's ssdtPRGen script.
+// This SSDT is created by Pike's ssdtPRGen script. https://github.com/Piker-Alpha/ssdtPRGen.sh
 // Beta branch with modified user defined data for FakeCPUID (faked as SNB: CPU Workarounds=2)
 // Other corresponding data found in Intel's ark needs to be configured.
 // This SSDT is for B940 and is supposed to generate C and P states.
 // Only P states are found with AppleIntelInfo.kext or Hackintool's debugged data.
-#ifndef NO_DEFINITIONBLOCK
+// LPCB device initialization needs to be debugged.
 DefinitionBlock ("", "SSDT", 1, "APPLE ", "CpuPm", 0x00021500)
 {
-#endif
-    External (_PR_.CPU0, DeviceObj)    // (from opcode)
-    External (_PR_.CPU1, DeviceObj)    // (from opcode)
+    External (_PR_.CPU0, ProcessorObj)    // (from opcode)
+    External (_PR_.CPU1, ProcessorObj)    // (from opcode)
 
     Scope (\_PR.CPU0)
     {
@@ -251,6 +250,4 @@ DefinitionBlock ("", "SSDT", 1, "APPLE ", "CpuPm", 0x00021500)
             Return (\_PR.CPU0.APSS)
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif

@@ -2,10 +2,8 @@
 // Applicable to Sierra and High Sierra.
 // Not necessary.
 // created for Toshiba Satellite C665 by whatnameisit
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0x00000000)
 {
-#endif
     Device (UIAC)
     {
         Method (_STA, 0, NotSerialized)  // _STA: Status
@@ -35,7 +33,5 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_UIAC", 0x00000000)
             }
         })
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
 

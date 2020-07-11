@@ -1,9 +1,7 @@
 // Required for USB power to be injected by AppleBusPowerController in Mojave or earlier
 // Required for booting in Catalina or higher.
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "fakeEC", 0x00000000)
 {
-#endif
     Device (_SB.PCI0.LPCB.EC)
     {
         Name (_HID, "ACID0001")  // _HID: Hardware ID
@@ -17,6 +15,4 @@ DefinitionBlock ("", "SSDT", 2, "hack", "fakeEC", 0x00000000)
             Return (Zero)
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif

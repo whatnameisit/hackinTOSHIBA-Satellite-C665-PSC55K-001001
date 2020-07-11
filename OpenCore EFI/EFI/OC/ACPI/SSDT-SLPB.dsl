@@ -1,8 +1,6 @@
 // This device exists in Mac machines.
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "hack", "SLPB", 0x00000000)
 {
-#endif
     Device (SLPB)
     {
         Name (_HID, EisaId ("PNP0C0E"))  // _HID: Hardware ID
@@ -16,7 +14,4 @@ DefinitionBlock ("", "SSDT", 2, "hack", "SLPB", 0x00000000)
             Return (Zero)
         }
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
-

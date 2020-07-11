@@ -1,9 +1,8 @@
 // Fake light sensor.
 // credit RehabMan
-#ifndef NO_DEFINITIONBLOCK
+// needed for screen backlight function in Catalina or higher
 DefinitionBlock ("", "SSDT", 2, "hack", "ALS0", 0x00000000)
 {
-#endif
     Device (_SB.ALS0)
     {
         Method (_STA)
@@ -26,7 +25,5 @@ DefinitionBlock ("", "SSDT", 2, "hack", "ALS0", 0x00000000)
             }
         })
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
 
