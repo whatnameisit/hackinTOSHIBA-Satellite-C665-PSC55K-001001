@@ -123,7 +123,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Drop CpuPm</string>
+				<string>Delete CpuPm</string>
 				<key>OemTableId</key>
 				<data>Q3B1UG0AAAA=</data>
 				<key>All</key>
@@ -137,7 +137,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Drop Cpu0Ist</string>
+				<string>Delete Cpu0Ist</string>
 				<key>OemTableId</key>
 				<data>Q3B1MElzdAA=</data>
 				<key>All</key>
@@ -151,7 +151,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Drop PtidDevc</string>
+				<string>Delete PtidDevc</string>
 				<key>OemTableId</key>
 				<data>UHRpZERldmM=</data>
 				<key>All</key>
@@ -165,7 +165,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Drop MCFG</string>
+				<string>Delete MCFG</string>
 				<key>OemTableId</key>
 				<data>AAAAAAAAAAA=</data>
 				<key>All</key>
