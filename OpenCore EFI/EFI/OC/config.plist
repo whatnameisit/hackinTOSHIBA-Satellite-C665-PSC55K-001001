@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB power fix</string>
+				<string>Fix USB power</string>
 				<key>Path</key>
 				<string>SSDT-EC.aml</string>
 				<key>Enabled</key>
@@ -165,7 +165,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>MCFG</string>
+				<string>Drop MCFG</string>
 				<key>OemTableId</key>
 				<data>AAAAAAAAAAA=</data>
 				<key>All</key>
@@ -364,7 +364,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sound fix: Rename HPET._CRS to XCRS Rename, pair up with SSDT-HPET.aml</string>
+				<string>Sound fix: Rename HPET._CRS to XCRS, pair up with SSDT-HPET.aml</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -771,7 +771,7 @@
 				<key>MaxKernel</key>
 				<string></string>
 				<key>Comment</key>
-				<string>SMC emulator</string>
+				<string>Fix AGPM</string>
 				<key>BundlePath</key>
 				<string>AGPMInjector.kext</string>
 				<key>MinKernel</key>
