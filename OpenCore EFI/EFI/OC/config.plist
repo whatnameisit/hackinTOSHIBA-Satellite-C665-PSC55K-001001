@@ -1330,6 +1330,7 @@
 			<string>#AudioDxe.efi</string>
 			<string>Ps2KeyboardDxe.efi</string>
 			<string>HfsPlusLegacy.efi</string>
+			<string>ExFatDxeLegacy.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
