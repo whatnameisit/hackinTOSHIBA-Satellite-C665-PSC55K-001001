@@ -70,28 +70,28 @@
 				<data>BgAAAA==</data>
 				<key>ports</key>
 				<dict>
-					<key>HP11</key>
+					<key>HA0L</key>
 					<dict>
 						<key>name</key>
-						<string>H11L</string>
+						<string>HA0L</string>
 						<key>port</key>
 						<data>AQAAAA==</data>
 						<key>portType</key>
 						<integer>0</integer>
 					</dict>
-					<key>HP12</key>
+					<key>HA0R</key>
 					<dict>
 						<key>name</key>
-						<string>H12R</string>
+						<string>HA0R</string>
 						<key>port</key>
 						<data>AgAAAA==</data>
 						<key>portType</key>
 						<integer>0</integer>
 					</dict>
-					<key>HP16</key>
+					<key>BLTH</key>
 					<dict>
 						<key>name</key>
-						<string>H16B</string>
+						<string>BLTH</string>
 						<key>port</key>
 						<data>BgAAAA==</data>
 						<key>portType</key>
@@ -152,19 +152,19 @@
 				<data>AwAAAA==</data>
 				<key>ports</key>
 				<dict>
-					<key>HP21</key>
+					<key>SDCR</key>
 					<dict>
 						<key>name</key>
-						<string>H21S</string>
+						<string>SDCR</string>
 						<key>port</key>
 						<data>AQAAAA==</data>
 						<key>portType</key>
 						<integer>0</integer>
 					</dict>
-					<key>HP23</key>
+					<key>WBCM</key>
 					<dict>
 						<key>name</key>
-						<string>H23W</string>
+						<string>WBCM</string>
 						<key>port</key>
 						<data>AwAAAA==</data>
 						<key>portType</key>
