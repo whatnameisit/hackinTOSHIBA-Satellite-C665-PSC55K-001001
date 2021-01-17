@@ -8,14 +8,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Fake light sensor</string>
-				<key>Path</key>
-				<string>SSDT-ALS0.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Fix USB power</string>
 				<key>Path</key>
 				<string>SSDT-EC.aml</string>
@@ -24,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fix sound</string>
+				<string>Rework conflicting IRQs</string>
 				<key>Path</key>
 				<string>SSDT-HPET.aml</string>
 				<key>Enabled</key>
@@ -32,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fix OEM LGPC method</string>
+				<string>Fix oiginal M(LGPC) in TsbOdm table</string>
 				<key>Path</key>
 				<string>SSDT-LGPC.aml</string>
 				<key>Enabled</key>
@@ -40,9 +32,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SMBUS compatibility 1</string>
+				<string>Add SMBus compatibility</string>
 				<key>Path</key>
-				<string>SSDT-MCHC.aml</string>
+				<string>SSDT-SBUS-MCHC.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -64,15 +56,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>CPUPM patch 1</string>
-				<key>Path</key>
-				<string>SSDT-PNOT.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>CPUPM patch 2</string>
+				<string>Enable native power management</string>
 				<key>Path</key>
 				<string>SSDT-PRGen.aml</string>
 				<key>Enabled</key>
@@ -80,33 +64,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sleep fix</string>
+				<string>Fix sleep</string>
 				<key>Path</key>
 				<string>SSDT-PRW.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Remap PS2</string>
-				<key>Path</key>
-				<string>SSDT-PS2.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SMBUS compatibility 2</string>
-				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Add SLPB device</string>
-				<key>Path</key>
-				<string>SSDT-SLPB.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -122,233 +82,25 @@
 		<key>Delete</key>
 		<array>
 			<dict>
+				<key>All</key>
+				<false/>
 				<key>Comment</key>
 				<string>Delete MCFG</string>
 				<key>OemTableId</key>
 				<data>AAAAAAAAAAA=</data>
-				<key>All</key>
-				<false/>
-				<key>TableSignature</key>
-				<data>TUNGRw==</data>
 				<key>Enabled</key>
 				<true/>
 				<key>TableLength</key>
 				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>TUNGRw==</data>
 			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
 			<dict>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>RUgwMg==</data>
 				<key>Comment</key>
-				<string>USB port match fix: EHC2 to EH02 to inject data only via USBPorts.kext</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Find</key>
-				<data>RUhDMg==</data>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
-				<key>Enabled</key>
-				<true/>
-				<key>Limit</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WEdQQwk=</data>
-				<key>Comment</key>
-				<string>Syntax Fix: M(LGPC) to XGPC, pair up with SSDT-LGPC.aml</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Find</key>
-				<data>TEdQQwk=</data>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
-				<key>Enabled</key>
-				<true/>
-				<key>Limit</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>QUJDREFCQ0Q=</data>
-				<key>Comment</key>
-				<string>Syntax Fix: _HID ABCDEFGH to ABCDABCD</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Find</key>
-				<data>QUJDREVGR0g=</data>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
-				<key>Enabled</key>
-				<true/>
-				<key>Limit</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>FB1YUFJXAKANVw==</data>
-				<key>Comment</key>
-				<string>Sleep Fix: Rename HDEF._PRW and GLAN._PRW to XPRW, pair up with SSDT-PRW.aml</string>
-				<key>Count</key>
-				<integer>2</integer>
-				<key>Find</key>
-				<data>FB1fUFJXAKANVw==</data>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
-				<key>Enabled</key>
-				<true/>
-				<key>Limit</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WFBSVxIGAgoNCgM=</data>
-				<key>Comment</key>
-				<string>Sleep Fix: Rename EHC1._PRW to XPRW, pair up with SSDT-PRW.aml</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Find</key>
-				<data>X1BSVxIGAgoNCgM=</data>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
-				<key>Enabled</key>
-				<true/>
-				<key>Limit</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WFBSVxIGAgoNCgQ=</data>
-				<key>Comment</key>
-				<string>Sleep Fix: Rename Lid0._PRW to XPRW, pair up with SSDT-PRW.aml</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Find</key>
-				<data>X1BSVxIGAgoNCgQ=</data>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
-				<key>Enabled</key>
-				<true/>
-				<key>Limit</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>UFlFUwg=</data>
-				<key>Comment</key>
-				<string>CPU Power Management with ssdtPRGen: Rename M(PNOT) to PYES, pair up with SSDT-PNOT.aml and SSDT-PRGen.aml</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Find</key>
-				<data>UE5PVAg=</data>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
-				<key>Enabled</key>
-				<true/>
-				<key>Limit</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAAAAAAA=</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WE9TSQ==</data>
-				<key>Comment</key>
-				<string>OS fix: Rename _OSI to XOSI, pair up with SSDT-XOSI.aml</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Find</key>
-				<data>X09TSQ==</data>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
-				<key>Enabled</key>
-				<true/>
-				<key>Limit</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Sound fix: Rename HPET._CRS to XCRS, pair up with SSDT-HPET.aml</string>
+				<string>IRQ fix: Rename M(HPET._CRS) to XCRS</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -363,6 +115,162 @@
 				<data>AAAAAAAAAAA=</data>
 				<key>Replace</key>
 				<data>WENSUwig</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>OS recognition fix: Rename _OSI to XOSI</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X09TSQ==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>Replace</key>
+				<data>WE9TSQ==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Sleep Fix: Rename M(EHC1._PRW) to XPRW</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1BSVxIGAgoNCgM=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>Replace</key>
+				<data>WFBSVxIGAgoNCgM=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Sleep Fix: Rename M(HDEF._PRW) and M(GLAN._PRW) to XPRW</string>
+				<key>Count</key>
+				<integer>2</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>FB1fUFJXAKANVw==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>Replace</key>
+				<data>FB1YUFJXAKANVw==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Sleep Fix: Rename M(LID0._PRW) to XPRW</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1BSVxIGAgoNCgQ=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>Replace</key>
+				<data>WFBSVxIGAgoNCgQ=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Syntax Fix: M(LGPC) to XGPC, pair up with SSDT-LGPC.aml</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>TEdQQwk=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>Replace</key>
+				<data>WEdQQwk=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Syntax Fix: _HID ABCDEFGH to ABCDABCD</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>QUJDREVGR0g=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAAAAAAA=</data>
+				<key>Replace</key>
+				<data>QUJDREFCQ0Q=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
