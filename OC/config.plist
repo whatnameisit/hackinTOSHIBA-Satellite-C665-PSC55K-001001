@@ -160,7 +160,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sleep Fix: Rename M(EHC1._PRW) to XPRW</string>
+				<string>Sleep Fix: Rename N(EHC1._PRW) to XPRW</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -212,7 +212,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sleep Fix: Rename M(LID0._PRW) to XPRW</string>
+				<string>Sleep Fix: Rename N(LID0._PRW) to XPRW</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
