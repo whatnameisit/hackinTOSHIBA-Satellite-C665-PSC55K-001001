@@ -1,7 +1,7 @@
 # Toshiba Satellite C665
 hackinTOSHIBA
 ## System specification
-| Name | Description |
+| Item | Details |
 | - | - |
 | Model | Toshiba Satellite C665 |
 | CPU | Intel Pentium B940 |
