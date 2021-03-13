@@ -16,7 +16,7 @@ This laptop does not natively support UEFI environment. Install `OpenDuetPkg` bu
 ## Issues
 1. There is 180 seconds of boot delay caused by HDMI audio initialization which eventually fails. This is somewhat resolved if the class-code of HDMI audio spoofed as `FFFFFFFF` (`invalid`) and thus disabling the HDMI audio.
 2. Lid-wake does not seem to work. I think I need to configure the ACPI LID0 device.
-3. The keyboard's fn+f4 makes the laptop freeze, forcing you to force shutdown by pressing the power button. I need to figure out a way to disable the PS2 code. Also, it'd be great to map fn+F6/F7 to control the brightness.
+3. The keyboard's fn+f4 makes the laptop freeze, resuting in force shutdown by pressing the power button. I need to figure out a way to disable the PS2 code. Also, it'd be great to map fn+F6/F7 to control the brightness.
 4. CPU idle doesn't work. The kernel log says LPC device initialization fails. If CPUFriend successfully loads, the LPC device initialization is "successful," and AppleIntelInfo.kext shows C-states, but it actually consumes more power and breaks the kernel, making AGPM fail to load. Looking into the BIOS rom, there is no CFG Lock feature.
 ## Replacements
 1. HDD to SSD.
