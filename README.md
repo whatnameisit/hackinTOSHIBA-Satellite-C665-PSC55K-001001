@@ -10,7 +10,7 @@ hackinTOSHIBA
 | CPU | Intel Pentium B940 |
 | SSD | TeamGroup L3 EVO 240GB *(Replaced stock HDD)* |
 | Graphics | Nvidia GeForce GT315M |
-| RAM | Samsung SODIMM DDR3 4GB x 2 *(Added one module)* |
+| RAM | Samsung 4GB x 2 1333 MHz DDR3 SODIMM *(Added one module)* |
 | Ethernet | Atheros AR8152/8158 PCI-E Fast Ethernet Controller |
 | Wi-Fi / Bluetooth | Dell DW1550 (4352 / 20702) combo *(Replaced)* |
 | Card Reader | Realtek USB Card Reader RTS5138 |

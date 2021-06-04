@@ -1126,7 +1126,6 @@
 			<string>OpenRuntime.efi</string>
 			<string>ExFatDxeLegacy.efi</string>
 			<string>OpenCanopy.efi</string>
-			<string>#AudioDxe.efi</string>
 			<string>Ps2KeyboardDxe.efi</string>
 			<string>HfsPlusLegacy.efi</string>
 		</array>
