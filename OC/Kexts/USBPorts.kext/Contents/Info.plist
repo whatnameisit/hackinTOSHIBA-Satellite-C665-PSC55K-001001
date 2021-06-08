@@ -22,7 +22,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro8,1-EHC1</key>
+		<key>MacBookPro9,1-EHC1</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -52,9 +52,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro8,1</string>
+			<string>MacBookPro9,1</string>
 		</dict>
-		<key>MacBookPro8,1-EHC1-internal-hub</key>
+		<key>MacBookPro9,1-EHC1-internal-hub</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -102,9 +102,9 @@
 			<key>locationID</key>
 			<integer>487587840</integer>
 			<key>model</key>
-			<string>MacBookPro8,1</string>
+			<string>MacBookPro9,1</string>
 		</dict>
-		<key>MacBookPro8,1-EHC2</key>
+		<key>MacBookPro9,1-EHC2</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -134,9 +134,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro8,1</string>
+			<string>MacBookPro9,1</string>
 		</dict>
-		<key>MacBookPro8,1-EHC2-internal-hub</key>
+		<key>MacBookPro9,1-EHC2-internal-hub</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -175,7 +175,7 @@
 			<key>locationID</key>
 			<integer>437256192</integer>
 			<key>model</key>
-			<string>MacBookPro8,1</string>
+			<string>MacBookPro9,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
