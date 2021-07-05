@@ -1,4 +1,4 @@
-# Toshiba Satellite C665
+# Toshiba Satellite C665 Hackintosh
 
 hackinTOSHIBA
 
