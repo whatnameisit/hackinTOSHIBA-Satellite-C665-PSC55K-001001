@@ -1,4 +1,4 @@
-# Toshiba Satellite C665
+# Toshiba Satellite C665 Hackintosh
 
 hackinTOSHIBA
 
@@ -19,7 +19,7 @@ hackinTOSHIBA
 
 ## Note
 
-This laptop does not natively support UEFI environment. Install `OpenDuetPkg` bundled with OpenCore. Update with caution as misconfiguration will lead to boot failure on all OS until fixed with external media.
+This laptop does not natively support UEFI environment. Install `OpenDuetPkg` bundled with OpenCore. Update with caution as misconfiguration will lead to boot failure on all OS until fixed with external media. Use `ocvalidate` to check for any misconfiguration.
 
 ## Issues
 

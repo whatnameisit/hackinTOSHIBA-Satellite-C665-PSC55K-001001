@@ -107,6 +107,10 @@
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>IRQ fix: Rename M(HPET._CRS) to XCRS</string>
 				<key>Count</key>
@@ -133,6 +137,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>OS recognition fix: Rename _OSI to XOSI</string>
 				<key>Count</key>
@@ -159,6 +167,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>Sleep Fix: Rename N(EHC1._PRW) to XPRW</string>
 				<key>Count</key>
@@ -185,6 +197,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>Sleep Fix: Rename M(HDEF._PRW) and M(GLAN._PRW) to XPRW</string>
 				<key>Count</key>
@@ -211,6 +227,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>Sleep Fix: Rename N(LID0._PRW) to XPRW</string>
 				<key>Count</key>
@@ -237,6 +257,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>Syntax Fix: M(LGPC) to XGPC, pair up with SSDT-LGPC.aml</string>
 				<key>Count</key>
@@ -263,6 +287,10 @@
 				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>Syntax Fix: _HID ABCDEFGH to ABCDABCD</string>
 				<key>Count</key>
@@ -300,6 +328,8 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
+			<false/>
+			<key>SyncTableIds</key>
 			<false/>
 		</dict>
 	</dict>
@@ -475,24 +505,6 @@
 				<key>MaxKernel</key>
 				<string></string>
 				<key>Comment</key>
-				<string>Processor monitor</string>
-				<key>BundlePath</key>
-				<string>SMCProcessor.kext</string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCProcessor</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>Comment</key>
 				<string>Battery meter</string>
 				<key>BundlePath</key>
 				<string>SMCBatteryManager.kext</string>
@@ -623,7 +635,7 @@
 				<key>BundlePath</key>
 				<string>AirportBrcmFixup.kext/Contents/Plugins/AirPortBrcm4360_Injector.kext</string>
 				<key>MinKernel</key>
-				<string></string>
+				<string>19.9.9</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -827,6 +839,8 @@
 			<false/>
 			<key>DisableIoMapper</key>
 			<false/>
+			<key>DisableLinkeditJettison</key>
+			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>ExtendBTFeatureFlags</key>
@@ -856,6 +870,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<false/>
 			<key>KernelArch</key>
@@ -887,7 +903,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Acidanthera\Syrah</string>
+			<string>Acidanthera/Syrah</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -934,10 +950,16 @@
 			<false/>
 			<key>DmgLoading</key>
 			<string>Signed</string>
+			<key>EnablePassword</key>
+			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>3</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
+			<key>PasswordHash</key>
+			<data></data>
+			<key>PasswordSalt</key>
+			<data></data>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>Vault</key>
@@ -1047,7 +1069,7 @@
 			<key>MLB</key>
 			<string>update this field</string>
 			<key>ROM</key>
-			<data>ESIzAAAA</data>
+			<data>ESIzRFVm</data>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>SpoofVendor</key>
