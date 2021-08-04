@@ -27,7 +27,7 @@ This laptop does not natively support UEFI environment. Install `OpenDuetPkg` bu
 2. Lid-wake does not seem to work. I think I need to configure the ACPI LID0 device.
 3. The keyboard's fn+f4 makes the laptop freeze, resuting in force shutdown by pressing the power button. I need to figure out a way to disable the PS2 code. Also, it'd be great to map other fn combination keys to control the volume and brightness.
 4. CPU idle doesn't work. The kernel log says LPC device initialization fails. If CPUFriend successfully loads, the LPC device initialization is "successful," and AppleIntelInfo.kext shows C-states, but it actually consumes more power and breaks the kernel, making AGPM fail to load. Looking into the BIOS rom, there is no CFG Lock feature.
-5. Hardwrae NVRAM is unsupported. Emulated NVRAM works on APPLE_BOOT_VARIABLE_GUID and nothing else, so boot order change is not possible.
+5. Hardwrae NVRAM is unsupported. Emulated NVRAM does not work well with `EFI_GLOBAL_VARIABLE_GUID`, so boot order is left unchanged. Refer to https://blog.daliansky.net/OpenCore-BootLoader.html for current workaround to manipulate the boot order.
 6. The legacy BIOS lacks PS2 driver compatible to OpenCore. The driver bundled with OpenCore only enables arrows, tabs, and enters.
 
 ## Steps to install
