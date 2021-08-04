@@ -1012,7 +1012,7 @@
 				<key>SystemAudioVolume</key>
 				<data>gA==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 applbkl=0 brcmfx-country=#a debug=0x100</string>
+				<string>keepsyms=1 applbkl=0 brcmfx-country=#a debug=0x100 -lilubetaall</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1128,9 +1128,9 @@
 			<key>JumpstartHotPlug</key>
 			<false/>
 			<key>MinDate</key>
-			<integer>0</integer>
+			<integer>20180621</integer>
 			<key>MinVersion</key>
-			<integer>0</integer>
+			<integer>748077008000000</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
@@ -1138,6 +1138,8 @@
 			<string>Builtin</string>
 			<key>CustomDelays</key>
 			<false/>
+			<key>GraphicsInputMirroring</key>
+			<true/>
 			<key>KeyInitialDelay</key>
 			<integer>0</integer>
 			<key>KeySubsequentDelay</key>
