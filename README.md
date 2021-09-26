@@ -1,4 +1,4 @@
-# Toshiba Satellite C665 Hackintosh
+# Toshiba Satellite C665 PSC55K-001001 Hackintosh
 
 hackinTOSHIBA
 
@@ -6,7 +6,7 @@ hackinTOSHIBA
 
 | Item | Details |
 | - | - |
-| Model | Toshiba Satellite C665 |
+| Model | Toshiba Satellite C665 PSC55K-001001 |
 | CPU | Intel Pentium B940 |
 | SSD | TeamGroup L3 EVO 240GB *(Replaced stock HDD)* |
 | Graphics | Nvidia GeForce GT315M |
