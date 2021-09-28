@@ -1222,7 +1222,7 @@
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
 			<key>KeySupport</key>
-			<false/>
+			<true/>
 			<key>KeySupportMode</key>
 			<string>Auto</string>
 			<key>KeySwap</key>
