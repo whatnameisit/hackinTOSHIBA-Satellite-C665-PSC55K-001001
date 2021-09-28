@@ -387,46 +387,52 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>@0,display-type</key>
-				<string>LCD</string>
-				<key>@0,device_type</key>
-				<string>display</string>
-				<key>@1,device_type</key>
-				<string>display</string>
-				<key>device_type</key>
-				<string>NVDA,Parent</string>
-				<key>rom-revision</key>
-				<string>whatnameisit</string>
-				<key>@0,name</key>
-				<string>NVDA,Display-A</string>
-				<key>@1,name</key>
-				<string>NVDA,Display-B</string>
+				<key>@0,AAPL,boot-display</key>
+				<data></data>
+				<key>@0,backlight-control</key>
+				<data>AQAAAA==</data>
+				<key>@0,built-in</key>
+				<data></data>
 				<key>@0,compatible</key>
-				<string>NVDA,NVMac</string>
-				<key>@1,compatible</key>
 				<string>NVDA,NVMac</string>
 				<key>@0,connector-type</key>
 				<data>AAgAAA==</data>
-				<key>model</key>
-				<string>NVIDIA GeForce GT315M</string>
-				<key>AAPL,HasPanel</key>
-				<data>AQAAAA==</data>
-				<key>@0,backlight-control</key>
-				<data>AQAAAA==</data>
-				<key>VRAM,totalsize</key>
-				<data>AAAAIA==</data>
+				<key>@0,device_type</key>
+				<string>display</string>
+				<key>@0,display-type</key>
+				<string>LCD</string>
+				<key>@0,name</key>
+				<string>NVDA,Display-A</string>
+				<key>@0,pwm-info</key>
+				<data>ARQAZKhhAAAIUgAAAQAAAAAEAAA=</data>
+				<key>@1,compatible</key>
+				<string>NVDA,NVMac</string>
+				<key>@1,device_type</key>
+				<string>display</string>
+				<key>@1,name</key>
+				<string>NVDA,Display-B</string>
 				<key>AAPL,backlight-control</key>
 				<data>AQAAAA==</data>
+				<key>AAPL,HasPanel</key>
+				<data>AQAAAA==</data>
+				<key>applbkl</key>
+				<data>AQAAAA==</data>
+				<key>applbkl-data</key>
+				<data>ABEAAAAYACcAOgBSAHEAlgDEAPwBQAGTAfYCbgL+A6oEeAVs</data>
+				<key>applbkl-name</key>
+				<data>RjE2VHh4eHg=</data>
+				<key>device_type</key>
+				<string>NVDA,Parent</string>
+				<key>model</key>
+				<string>NVIDIA GeForce GT315M</string>
 				<key>NVCAP</key>
 				<data>BAAAAAAAAwAMAAAAAAAABwAAAAA=</data>
 				<key>NVPM</key>
 				<data>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</data>
-				<key>@0,pwm-info</key>
-				<data>ARQAZKhhAAAIUgAAAQAAAAAEAAA=</data>
-				<key>@0,built-in</key>
-				<data></data>
-				<key>@0,AAPL,boot-display</key>
-				<data></data>
+				<key>rom-revision</key>
+				<string>whatnameisit</string>
+				<key>VRAM,totalsize</key>
+				<data>AAAAIA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
 			<dict>
@@ -533,24 +539,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Backlight</string>
-				<key>BundlePath</key>
-				<string>AppleBacklightFixup.kext</string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AppleBacklightFixup</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -1012,7 +1000,7 @@
 				<key>SystemAudioVolume</key>
 				<data>gA==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 applbkl=0 brcmfx-country=#a debug=0x100 -lilubetaall</string>
+				<string>keepsyms=1 brcmfx-country=#a debug=0x100 -lilubetaall</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
