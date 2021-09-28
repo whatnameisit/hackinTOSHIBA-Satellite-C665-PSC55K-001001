@@ -417,10 +417,10 @@
 				<data>AQAAAA==</data>
 				<key>applbkl</key>
 				<data>AQAAAA==</data>
-				<key>#applbkl-name</key>
-				<data></data>
-				<key>#applbkl-data</key>
-				<data></data>
+				<key>applbkl-data</key>
+				<data>ABEAAAAYACcAOgBSAHEAlgDEAPwBQAGTAfYCbgL+A6oEeAVs</data>
+				<key>applbkl-name</key>
+				<data>RjE2VHh4eHg=</data>
 				<key>device_type</key>
 				<string>NVDA,Parent</string>
 				<key>model</key>
