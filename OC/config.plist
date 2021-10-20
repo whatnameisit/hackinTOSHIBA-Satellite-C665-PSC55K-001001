@@ -387,6 +387,10 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
+				<key>@0,built-in</key>
+				<data>AQ==</data>
+				<key>@0,backlight-control</key>
+				<data>AQAAAA==</data>
 				<key>@0,compatible</key>
 				<string>NVDA,NVMac</string>
 				<key>@0,connector-type</key>
@@ -395,6 +399,8 @@
 				<string>display</string>
 				<key>@0,name</key>
 				<string>NVDA,Display-A</string>
+				<key>@0,pwm-info</key>
+				<data>ARQAZKhhAAAIUgAAAQAAAAAEAAA=</data>
 				<key>@1,compatible</key>
 				<string>NVDA,NVMac</string>
 				<key>@1,device_type</key>
